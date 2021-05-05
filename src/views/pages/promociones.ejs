@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('../partials/head') %>
+<body id="body">
+
+    <%- include('../layout/header') %>
+
+    <div class="cinema">
+        <div class="We__image">
+            <div class="prom__color">
+                <p class="cinema__title">PROMOCIONES</p>
+            </div>
+        </div>
+        <div class="prom">
+            <div class="home__pad">
+                <div class="cinema__grid">
+                    <div class="prom__flex">
+                        <div class="prom__flexback" onclick="shop()" id="one">
+                            <p>Filtrar Tiendas<span class="icon-ctrl prom__flexarrow"></span></p>
+                            <form class="prom__flexmenu" id="tienda">
+                                <input type="checkbox" id="tie1">
+                                <label for="tie1" class="prom__flexcheck">Tienda 1</label><br><br>
+                                <input type="checkbox" id="tie2">
+                                <label for="tie2" class="prom__flexcheck">Tienda 2</label><br><br>
+                                <input type="checkbox" id="tie3">
+                                <label for="tie3" class="prom__flexcheck">Tienda 3</label><br><br>
+                                <input type="checkbox" id="tie4">
+                                <label for="tie4" class="prom__flexcheck">Tienda 4</label><br><br>
+                                <input type="checkbox" id="tie5">
+                                <label for="tie5" class="prom__flexcheck">Tienda 5</label><br><br>
+                            </form>
+                        </div>
+                        <div class="prom__flexback" onclick="grade()" id="two">
+                            <p>Filtrar Categoría<span class="icon-ctrl prom__flexarrow"></span></p>
+                            <form class="prom__flexmenu" id="cate">
+                                <input type="checkbox" id="cate1">
+                                <label for="cate1" class="prom__flexcheck">Categoría</label><br><br>
+                                <input type="checkbox" id="cate2">
+                                <label for="cate2" class="prom__flexcheck">Categoría</label><br><br>
+                                <input type="checkbox" id="cate3">
+                                <label for="cate3" class="prom__flexcheck">Categoría</label><br><br>
+                                <input type="checkbox" id="cate4">
+                                <label for="cate4" class="prom__flexcheck">Categoría</label><br><br>
+                                <input type="checkbox" id="cate5">
+                                <label for="cate5" class="prom__flexcheck">Categoría</label><br><br>
+                            </form>
+                        </div>
+                        <div class="prom__flexback" onclick="order()" id="three">
+                            <p>Más Recientes<span class="icon-ctrl prom__flexarrow"></span></p>
+                            <form class="prom__flexmenu" id="order">
+                                <input type="checkbox" id="order1">
+                                <label for="order1" class="prom__flexcheck">Orden 1</label><br><br>
+                                <input type="checkbox" id="order2">
+                                <label for="order2" class="prom__flexcheck">Orden 2</label><br><br>
+                                <input type="checkbox" id="order3">
+                                <label for="order3" class="prom__flexcheck">Orden 3</label><br><br>
+                                <input type="checkbox" id="order4">
+                                <label for="order4" class="prom__flexcheck">Orden 4</label><br><br>
+                                <input type="checkbox" id="order5">
+                                <label for="order5" class="prom__flexcheck">Orden 5</label><br><br>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="prom__menu">
+                        <div class="prom__flexback">
+                            <p onclick="fil()">Filtros<span class="icon-ctrl prom__flexarrow"></span></p>
+                            <div class="modmenu" id="modmenu1">
+                                <p class="modmenu__title">Filtros</p>
+                                <button class="accordion">Categoría <span class="icon-ctrl accordion__arrow"></span></button>
+                                <form class="panel" id="cate">
+                                    <br>
+                                    <input type="checkbox" id="cate1">
+                                    <label for="cate1" class="prom__flexcheck">Categoría</label><br><br>
+                                    <input type="checkbox" id="cate2">
+                                    <label for="cate2" class="prom__flexcheck">Categoría</label><br><br>
+                                    <input type="checkbox" id="cate3">
+                                    <label for="cate3" class="prom__flexcheck">Categoría</label><br><br>
+                                    <input type="checkbox" id="cate4">
+                                    <label for="cate4" class="prom__flexcheck">Categoría</label><br><br>
+                                    <input type="checkbox" id="cate5">
+                                    <label for="cate5" class="prom__flexcheck">Categoría</label><br><br>
+                                </form>
+
+                                <button class="accordion">Tienda <span class="icon-ctrl accordion__arrow"></span></button>
+                                <form class="panel">
+                                    <br>
+                                    <input type="checkbox" id="tie1">
+                                    <label for="tie1" class="prom__flexcheck">Tienda 1</label><br><br>
+                                    <input type="checkbox" id="tie2">
+                                    <label for="tie2" class="prom__flexcheck">Tienda 2</label><br><br>
+                                    <input type="checkbox" id="tie3">
+                                    <label for="tie3" class="prom__flexcheck">Tienda 3</label><br><br>
+                                    <input type="checkbox" id="tie4">
+                                    <label for="tie4" class="prom__flexcheck">Tienda 4</label><br><br>
+                                    <input type="checkbox" id="tie5">
+                                    <label for="tie5" class="prom__flexcheck">Tienda 5</label><br><br>
+                                </form>
+                                <div class="modmenu__foot">
+                                    <p class="modmenu__foottext">Limpiar Filtro</p>
+                                </div>
+                                <span onclick="Closeprom1()" class="prom__close">×</span>
+                            </div>
+                        </div>
+                        <div class="prom__flexback">
+                            <p onclick="ordena()">Ordenar<span class="icon-ctrl prom__flexarrow"></span></p>
+                            <div class="modmenu" id="modmenu2">
+                                <p class="modmenu__title">Ordenar</p>
+                                <form class="panel__see" id="order">
+                                    <input type="checkbox" id="order1">
+                                    <label for="order1" class="prom__flexcheck">Orden 1</label><br><br>
+                                    <input type="checkbox" id="order2">
+                                    <label for="order2" class="prom__flexcheck">Orden 2</label><br><br>
+                                    <input type="checkbox" id="order3">
+                                    <label for="order3" class="prom__flexcheck">Orden 3</label><br><br>
+                                    <input type="checkbox" id="order4">
+                                    <label for="order4" class="prom__flexcheck">Orden 4</label><br><br>
+                                    <input type="checkbox" id="order5">
+                                    <label for="order5" class="prom__flexcheck">Orden 5</label><br><br>
+                                </form>
+                                <span onclick="Closeprom2()" class="prom__close">×</span>
+                            </div>
+                        </div>
+                    </div>
+                    <%- include('../components/promo') %>
+                    <%- include('../components/promo') %> 
+                    <%- include('../components/promo') %> 
+                    <%- include('../components/promo') %>
+                    <a href="" class="cinema__button cinema__headmoviebutton prom__button"><b>Cargar Más</b></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('../layout/footer') %> 
+
+    <%- include('../partials/scripts') %>
+    
+</body>
+</html>

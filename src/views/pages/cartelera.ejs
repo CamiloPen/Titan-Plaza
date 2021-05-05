@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('../partials/head') %>
+<body id="body">
+
+    <%- include('../layout/header') %>
+
+    <div class="cinema">
+        <div class="We__image">
+            <div class="cinema__color">
+                <p class="cinema__title">CARTELERA</p>
+            </div>
+        </div>
+        <div class="cinema__back">
+            <div class="cinema__margin">
+                <div class="cinema__head">
+                    <div class="cinema__headmovie">
+                        <img src="assets/img/peli1.png" class="cinema__headmovieimg">
+                        <img src="assets/img/cinema-head.png" class="cinema__headmovietopimg cinema__headmovietop">
+                        <div class="cinema__margin">
+                            <p class="home__flex--colorPi cinema__titlejust"><b>I Feel Pretty</b></p>
+                            <p class="home__flex--colorBlack cinema__headmovietext">¡El mercenario bocazas de Marvel está de regreso! Más grande, mucho mejor y, en ocasiones, con menos calzones que nunca. Cuando un súper soldado llega para llevar a cabo una misión asesina, Deadpool se ve obligado a pensar en la amistad, la familia y lo que significa en realidad ser un héroe —todo, mientras patea 50 sombras de traseros. Porque, de vez en cuando, para hacer lo correcto necesitas pelear sucio.</p>
+                            <p class="cinema__headmovietop">15<br>Años</p>
+                            <a href="pelicula.html" class="cinema__headmoviebutton">Ver Más</a>
+                            <br><br><br>
+                        </div>
+                        <div class="cinema__margin">
+                            <p class="home__flex--colorBlack cinema__headmovietext"><b>Fecha de Estreno</b><br>18 de Mayo, 2018<br><br>
+                            <b>Duración</b><br>115 min.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br><br><br>
+            <div class="cinema__margin">
+            <div class="cinema__content">
+                
+                    <h2 class="home__flextitle home__flex--colorPi">TODAS LA PELÍCULAS</h2>
+                
+                    <div class="cinema__grid">
+                        <%- include('../components/movies') %>
+                        <%- include('../components/movies') %>
+                        <%- include('../components/movies') %>
+                        <a href="" class="cinema__button cinema__headmoviebutton"><b>Cargar Más</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('../layout/footer') %> 
+
+    <%- include('../partials/scripts') %>
+    
+</body>
+</html>

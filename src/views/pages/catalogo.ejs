@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('../partials/head') %>
+<body id="body">
+    
+    <%- include('../layout/header') %>
+
+    <div class="bill">
+        <p class="bill__title"><b>PERFIL</b></p>
+        <div class="bill__max">
+            <div class="bill__maxback">
+                <a href="factura.html"><span class="icon-ctrl bill__maxctrl"></span><b>Volver</b></a>
+            </div>
+            <div class="bill__maxmore">
+                <p><b>Catálogo</b></p>
+                <div class="bill__maxbuttoncata bill__maxbutton--res bill__maxbutton">
+                    <select class="bill__modalsele bill__maxcatasele">
+                        <option>Ordenar por...</option>
+                        <option>Opción 1</option>
+                        <option>Opción 2</option>
+                        <option>Opción 3</option>
+                    </select>
+                    <span class="icon-ctrl spanarrow"></span>
+                </div>
+            </div>
+            <div class="bill__maxcata">
+                <%- include('../components/celular') %>
+                <%- include('../components/celular') %>
+                <%- include('../components/celular') %>
+                <%- include('../components/celular') %>
+                <%- include('../components/celular') %>
+                <%- include('../components/celular') %>
+                <%- include('../components/celular') %>
+                <%- include('../components/celular') %>
+                <%- include('../components/celular') %>
+                <%- include('../components/celular') %>
+                <%- include('../components/celular') %>
+                <%- include('../components/celular') %>
+                <%- include('../components/celular') %>
+                <%- include('../components/celular') %>
+                <%- include('../components/celular') %>
+                <%- include('../components/celular') %>
+                <button class="bill__maxbuttonkeep bill__maxbutton">Guardar Cambios</button>
+            </div>
+        </div>
+    </div>
+
+    <%- include('../layout/footer') %> 
+
+    <%- include('../partials/scripts') %>
+    
+</body>
+</html>

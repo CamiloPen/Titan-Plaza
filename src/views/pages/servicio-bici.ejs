@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('../partials/head') %>
+<body id="body">
+
+    <%- include('../layout/header') %>
+
+    <div class="cinema">
+        <div class="prom__back">
+            <div class="cinema__margin">
+                <div class="cinema__redes">
+                    <a href="servicios.html" class="cinema__redeslink service__button"><span class="icon-ctrl cinema__redesarrow"></span>Volver</a>
+                    <div>
+                        <p class="cinema__redes--color">Compartir: <span class="icon-facebook cinema__redesmargin home__flex--colorOrange"></span> <span class="icon-twitter home__flex--colorOrange cinema__redesmargin"></span></p>
+                    </div>
+                </div>
+                <div class="service__container">
+                    <h2 class="home__flextitle home__flex--colorOrange">Bicicletas</h2>
+                    <img src="assets/img/servicio.png" class="service__containerimg"><br><br><br>
+                    <p>Encuentra en el Centro Comercial el stand del  Punto de Información Turistica (Pit) el cual  tiene como función principal ayudar al desarrollo económico de la ciudad de Bogotá mediante la promoción y gestión de destinos a nivel nacional e internacional. A través de la promoción, se maneja la Red de Información Turística, la cual brinda información turística a locales, nacionales y extranjeros a través de tres canales:</p><br>
+                    <ol> 
+                        <li>Puntos de información Turística: En donde encontraras un equipo altamente calificado en  idiomas en algunos casos más de dos idiomas.  quienes cuentan con actitud de servicio y conocimientos en turismo.
+                        </li><br>
+                        <li>Puntos de información turística virtual: red de pedestales virtuales en los cuales se encuentra el aplicativo con información de ciudad desarrollado por el PIT y la Alta Consejeria para las TICS.
+                        </li><br>
+                        <li>Puntos de Información Móviles: puntos atendidos por guías turísticos que te ayudan en eventos o por días aleatorios dentro de la ciudad.</li>
+                    </ol>
+                    <p><b>Horarios</b><br><br>Lunes a Sábado de 11:00 am a 2:00 pm y de 3:00 pm a 7:00 pm<br><br>Domingos y Festivos de 11:00 am a 2:00 pm y de 3:00 pm a 6:00 pm</p>
+                </div>
+            </div>
+        </div>
+        <div class="cinema__margin">
+            <div class="cinema__content">
+                <h2 class="News__titlebig home__flex--colorOrange">Otros Servicios</h2><br>
+                <div class="cinema__grid">
+                    <%- include('../components/servicio') %>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br><br><br><br><br>
+    </div>
+
+    <%- include('../layout/footer') %> 
+
+    <%- include('../partials/scripts') %>
+    
+</body>
+</html>

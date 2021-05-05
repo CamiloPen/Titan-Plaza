@@ -1,0 +1,95 @@
+.drz {
+    text-align: center;
+    border: 2px dashed #B3B3B3;
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 80px;
+    margin: 60px;
+
+    @media screen and (max-width: 970px) {
+        border: none;
+        padding: 160px 0;
+    }
+
+    @media screen and (max-width: 970px) {
+        margin: 0;
+    }
+}
+
+.dropzoneview{
+    display: none;
+    margin: 50px;
+
+    @media screen and (max-width: 970px) {
+        display: block;
+    }
+}
+
+.dropzonetext {
+    max-width: 290px;
+    margin: 40px auto;
+
+    @media screen and (max-width: 970px) {
+        display: none;
+    }
+}
+
+.dz- {
+    &success-mark, &error-mark {
+        display: none;
+    }
+    
+    &remove {
+        background: #903392;
+        border-radius: 25px;
+        width: 100%;
+        max-width: 350px;
+        padding: 12px 72px;
+        color: #fff;
+        display: block;
+        margin: 30px auto 0 auto;
+    }
+
+    &filename {
+        max-width: 450px;
+        display: block;
+        margin: 30px auto 0 auto;
+    }
+}
+
+.dropzone, .dropzone .dz-preview.dz-image-preview {
+    background: none;
+}
+
+.dropzone .dz-preview .dz-details .dz-size, .dropzone .dz-preview .dz-filename {
+    margin-top: 17px;
+}
+
+.dropzone .dz-preview .dz-image, .dropzone .dz-preview .dz-image img {
+    margin: auto;
+}
+
+.dropzone .dz-preview:hover .dz-image img {
+    -webkit-filter: none;
+    filter: none; 
+}
+
+.dropzone .dz-message .dz-button {
+    color: $cp;
+    font-weight: bold;
+    background: white;
+    border-radius: 17px;
+    padding: 10px 36px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+}
+
+.dropzone .dz-preview .dz-details {
+    opacity: 1;
+    min-width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.dropzone .dz-preview .dz-remove {
+    text-decoration: none;
+}

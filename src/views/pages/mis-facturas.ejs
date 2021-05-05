@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('../partials/head') %>
+<body id="body">
+    
+    <%- include('../components/modal-sale') %> 
+    <%- include('../components/imgenmodal') %> 
+    <%- include('../layout/header') %>
+
+    <div class="bill">
+        <p class="bill__title"><b>PERFIL</b></p>
+        <div class="bill__max">
+            <div class="bill__maxback">
+                <a href="factura.html"><span class="icon-ctrl bill__maxctrl"></span><b>Volver</b></a>
+            </div>
+            <div class="bill__maxmore">
+                <p><b>Mis Facturas</b></p>
+                <button onclick="addimg()" class="bill__maxbutton bill__maxbutton--res"><span class="icon-camera">   </span>Agregar Factura</button>
+            </div>
+            <%- include('../components/facturas') %>
+        </div>
+    </div>
+
+    <%- include('../layout/footer') %> 
+
+    <%- include('../partials/scripts') %>
+    
+</body>
+</html>

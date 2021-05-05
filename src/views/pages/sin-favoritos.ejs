@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('../partials/head') %>
+<body id="body">
+    
+    <%- include('../layout/header') %>
+
+    <div class="bill">
+            <p class="bill__title"><b>PERFIL</b></p>
+        <div class="data__grid">
+            <%- include('../components/perfil') %>
+            <div class="favorite__center">
+                <img src="assets/img/sin-fav.png">
+                <p>Aún no has guardado almacenes en tus favoritos.</p>
+                <p>Haz clic en <span class="favorite__heart icon-heart"></span>     para agrega un almacén a tus favoritos.</p>
+            </div>
+        </div>
+    </div>
+
+    <%- include('../layout/footer') %> 
+
+    <%- include('../partials/scripts') %>
+    
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('../partials/head') %>
+<body id="body">
+
+    <%- include('../layout/header') %>
+        
+    <div class="store">
+        <p class="store__title">Directorio de Tiendas</p>
+        <div class="store__center">
+            <button class="store__menufiltro" onclick="filtros()">Filtros <span class="icon-ctrl store__menuArrow"></span></button>
+        </div>
+        <div class="store__search"><input type="name" class="store__searchtext" name="tienda" placeholder="Tienda">
+            <button class="icon-search store__searchbutton"></button>
+        </div>
+        <div class="store__grid">
+            <div id="filtro" class="store__filtros">
+                <h2 class="store__title--center store__filtros--BK"><b>Filtros</b></h2><br>
+                <hr class="store__linea">
+                <h2 class="store__filtros--BK"><b>Favoritos</b></h2>
+                <input type="checkbox" id="fav">
+                <label class="store__check" for="fav">Filtrar Favoritos</label>
+                <h2 class="store__filtros--BK"><b>Categorías</b></h2>
+                <input type="checkbox" id="all">
+                <label class="store__check" for="all">Todas las Categorías<br>
+                </label>
+                <input type="checkbox" id="acc">
+                <label class="store__check" for="acc">Accesorios</label><br>
+                <input type="checkbox" id="age">
+                <label class="store__check" for="age">Agencia de Viaje
+                </label><br>
+                <input type="checkbox" id="ban">
+                <label class="store__check" for="ban">Bancos y Afines
+                </label><br>
+                <input type="checkbox" id="cal">
+                <label class="store__check" for="cal">Calzado</label><br>
+                <input type="checkbox" id="com">
+                <label class="store__check" for="com">Comida</label><br>
+                <input type="checkbox" name="" id="dep">
+                <label class="store__check" for="dep">Deporte</label><br>
+                <input type="checkbox" name="" id="ent">
+                <label class="store__check" for="ent">Entretenimiento</label><br>
+                <input type="checkbox" name="" id="hog">
+                <label class="store__check" for="hog">Hogar y Decoracion
+                </label><br>
+                <input type="checkbox" name="" id="joy">
+                <label class="store__check" for="joy">Joyería y Relogería
+                </label><br>
+                <input type="checkbox" name="" id="jug">
+                <label class="store__check" for="jug">Juguetería</label><br>
+                <input type="checkbox" name="" id="lib">
+                <label class="store__check" for="lib">Librería y Papelería
+                </label><br>
+                <input type="checkbox" name="" id="mar">
+                <label class="store__check" for="mar">Marroquinería</label><br>
+                <input type="checkbox" name="" id="opt">
+                <label class="store__check" for="opt">Optica</label><br>
+                <input type="checkbox" name="" id="sal">
+                <label class="store__check" for="sal">Salud y Belleza
+                </label><br>
+                <input type="checkbox" name="" id="ser">
+                <label class="store__check" for="ser">Servicios y Otros
+                </label><br>
+                <input type="checkbox" name="" id="depa">
+                <label class="store__check" for="depa">Tdas Departamentos
+                </label><br>
+                <input type="checkbox" name="" id="tec">
+                <label class="store__check" for="tec">Tecnología</label><br>
+                <input type="checkbox" name="" id="tel">
+                <label class="store__check" for="tel">Telefonía</label><br>
+                <input type="checkbox" name="" id="ves">
+                <label class="store__check" for="ves">Vestuario</label>
+            </div>
+            <div class="store__column">
+                <div class="store__boxs">
+                    <a href="tienda.html">
+                        <img src="assets/img/pri.png" class="store__img">
+                        <div class="store__boxsML">
+                            <p class="store__text">Adidas</p>
+                            <p>Deporte, Vestuario, Calzado</p>
+                        </div>
+                        <hr>
+                        <p class="store__boxsML store__text store__textBack"><span class="icon-location"></span> Local 3-55</p>
+                    </a>
+                    <button class="store__boxheart icon-heart" onclick="changeColor(this)"></button>
+                </div>
+                <div class="store__boxs">
+                    <a href="tienda.html">
+                        <img src="assets/img/sec.png" class="store__img">
+                        <div class="store__boxsML">
+                            <p class="store__text">Americanino</p>
+                            <p>Vestuario, Calzado</p>
+                        </div>
+                        <hr>
+                        <p class="store__boxsML store__text store__textBack"><span class="icon-location"></span> Local 3-55</p>
+                    </a>
+                    <button class="store__boxheart icon-heart" onclick="changeColor(this)"></button>
+                </div>
+                <div class="store__boxs">
+                    <a href="tienda.html">
+                        <img src="assets/img/ter.png" class="store__img">
+                        <div class="store__boxsML">
+                            <p class="store__text">Bella Piel</p>
+                            <p>Salud y Belleza</p>
+                        </div>
+                        <hr>
+                        <p class="store__boxsML store__text store__textBack"><span class="icon-location"></span> Local 3-55</p>
+                    </a>
+                    <button class="store__boxheart icon-heart" onclick="changeColor(this)"></button>
+                </div>
+                <div class="store__boxs">
+                    <a href="tienda.html">
+                        <img src="assets/img/cua.png" class="store__img">
+                        <div class="store__boxsML">
+                            <p class="store__text">Brissa</p>
+                            <p>Salud y Belleza</p>
+                        </div>
+                        <hr>
+                        <p class="store__boxsML store__text store__textBack"><span class="icon-location"></span> Local 3-55</p>
+                    </a>
+                    <button class="store__boxheart icon-heart" onclick="changeColor(this)"></button>
+                </div>
+                <div class="store__boxs">
+                    <a href="tienda.html">
+                        <img src="assets/img/qui.png" class="store__img">
+                        <div class="store__boxsML">
+                            <p class="store__text">Carlos Nieto</p>
+                            <p>Vestuario, Calzado, Marroquinería</p>
+                        </div>
+                        <hr>
+                        <p class="store__boxsML store__text store__textBack"><span class="icon-location"></span> Local 3-55</p>
+                    </a>
+                    <button class="store__boxheart icon-heart" onclick="changeColor(this)"></button>
+                </div>
+                <div class="store__boxs">
+                    <a href="tienda.html">
+                        <img src="assets/img/seis.png" class="store__img">
+                        <div class="store__boxsML">
+                            <p class="store__text">Claro </p>
+                            <p>Telefonía, Tecnología</p>
+                        </div>
+                        <hr>
+                        <p class="store__boxsML store__text store__textBack"><span class="icon-location"></span> Local 3-55</p>
+                    </a>
+                    <button class="store__boxheart icon-heart" onclick="changeColor(this)"></button>
+                </div>
+                <div class="store__boxs">
+                    <a href="tienda.html">
+                        <img src="assets/img/siete.png" class="store__img">
+                        <div class="store__boxsML">
+                            <p class="store__text">Crepes & Waffles</p>
+                            <p>Comida</p>
+                        </div>
+                        <hr>
+                        <p class="store__boxsML store__text store__textBack"><span class="icon-location"></span> Local 3-55</p>
+                    </a>
+                    <button class="store__boxheart icon-heart" onclick="changeColor(this)"></button>
+                </div>
+                <div class="store__boxs">
+                    <a href="tienda.html">
+                        <img src="assets/img/ocho.png" class="store__img">
+                        <div class="store__boxsML">
+                            <p class="store__text">Doménico</p>
+                            <p>Vestuario, Calzado</p>
+                        </div>
+                        <hr>
+                        <p class="store__boxsML store__text store__textBack"><span class="icon-location"></span> Local 3-55</p>
+                    </a>
+                    <button class="store__boxheart icon-heart" onclick="changeColor(this)"></button>
+                </div>
+                <div class="store__boxs">
+                    <a href="tienda.html">
+                        <img src="assets/img/nueve.png" class="store__img">
+                        <div class="store__boxsML">
+                            <p class="store__text">El Corral</p>
+                            <p>Comida</p>
+                        </div>
+                        <hr>
+                        <p class="store__boxsML store__text  store__textBack"><span class="icon-location"></span> Local 3-55</p>
+                    </a>
+                    <button class="store__boxheart icon-heart" onclick="changeColor(this)"></button>
+                </div>
+                <button class="store__more">Cargar Más</button>
+            </div>
+        </div>
+    </div>
+
+    <%- include('../layout/footer') %> 
+
+    <%- include('../partials/scripts') %>
+
+</body>
+</html>

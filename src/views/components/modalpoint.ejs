@@ -1,0 +1,73 @@
+<div id="modPoints" class="modal">
+    <div class="modal__pad">
+        <div class="bill__modalcont">
+            <div class="bill__modalhead">
+                <div class="bill__modalheadback">
+                    <p class="bill__modalheadtext"><b>Recibe 1.000 puntos Solo por actualizar tu información.</b></p>
+                </div>
+            </div>
+            <div class="bill__modaltitle">
+                <p><b>Antes de continuar, por favor completa la siguiente información.</b></p>
+            </div>
+            <form>
+                <div class="bill__modalgrid">
+                    <div class="bill__modalbox">
+                        <label class="bill__modallab"><b>Nombre</b></label><br>
+                        <input type="text" class="bill__modalinput" placeholder="Ingresa tu nombre"><br>
+                    </div>
+                    <div>
+                        <label class="bill__modallab"><b>Apellido</b></label><br>
+                        <input type="text" class="bill__modalinput" placeholder="Ingresa tu apellido"><br>
+                    </div>
+                    <div>
+                        <label class="bill__modallab"><b>Tipo de Documento</b></label><br>
+                        <div class="bill__modalinput">
+                            <select id="Doc" class="bill__modalsele">
+                                <option value="none">Seleccione Tipo de Documento</option>
+                                <option value="CC">Cédula de Ciudadania</option>
+                                <option value="CE">Cédula de Extrangería</option>
+                                <option value="PS">Pasaporte</option>
+                            </select>
+                            <span class="icon-ctrl spanarrow"></span>
+                        </div><br>
+                    </div>
+                    <div>
+                        <label class="bill__modallab"><b>Número de Documento</b></label><br>
+                        <input type="number" min="1" class="bill__modalinput" placeholder="Ingresa tu número de documento"><br>
+                    </div>
+                    <div>
+                        <label class="bill__modallab" for="Dep"><b>Departamento</b></label><br>
+                        <div  class="bill__modalinput">
+                            <select id="Dep"  class="bill__modalsele">
+                                <option value="none">Seleccione tu departamento</option>
+                                <option value="Ant">Antioquía</option>
+                                <option value="Atla">Atlántico</option>
+                                <option value="Boy">Boyacá</option>
+                                <option value="Cundi">Cundinamarca</option>
+                            </select>
+                            <span class="icon-ctrl spanarrow"></span>
+                        </div><br>
+                    </div>
+                    <div>
+                        <label class="bill__modallab" for="Ciu"><b>Ciudad</b></label><br>
+                        <div class="bill__modalinput">
+                            <select id="Ciu"  class="bill__modalsele">
+                                <option value="none">Seleccione tu ciudad</option>
+                                <option value="Med">Medellín</option>
+                                <option value="Barra">Barranquilla</option>
+                                <option value="Tun">Tunja</option>
+                                <option value="Bogo">Bogotá</option>
+                            </select>
+                            <span class="icon-ctrl spanarrow"></span>
+                        </div>
+                    </div>
+                    <button type="submit" class="bill__modalsubmit">Guardar</button>
+                </div>
+            </form>
+            <div class="bill__modalfoot">
+                <p><span class="bill__modalfoottex">i</span>Una vez ingresado un número de cedula, este no podrá ser cambiado.</p>
+            </div>
+        </div>
+        <span onclick="Close()" class="close">&times;</span> 
+    </div>
+</div>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('../partials/head') %>
+<body id="body">
+    
+    <%- include('../layout/header') %>
+
+    <div class="bill">
+            <p class="bill__title"><b>PERFIL</b></p>
+        <div class="data__grid">
+            <%- include('../components/perfil') %>
+            <form class="form">
+                <div class="form__grid">
+                    <div class="bill__modalbox">
+                        <label class="bill__modallab"><b>Contraseña Antigua</b></label>
+                        <input class="bill__modalinput" type="password" placeholder="Ingresa tu contraseña antigua">
+                    </div>
+                    <div class="bill__modalbox second">
+                        <label class="bill__modallab"><b>Contraseña Nueva</b></label>
+                        <input class="bill__modalinput" type="password" placeholder="Ingresa tu contraseña nueva">
+                    </div>
+                    <div class="bill__modalbox">
+                        <label class="bill__modallab"><b>Confirma Contraseña Nueva</b></label>
+                        <input class="bill__modalinput" type="password" placeholder="Confirma tu contraseña nueva">
+                    </div>
+                    <div class="form__center">
+                        <button type="submit" class="bill__modalsubmit">Cambiar Contraseña</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <%- include('../layout/footer') %> 
+
+    <%- include('../partials/scripts') %>
+    
+</body>
+</html>

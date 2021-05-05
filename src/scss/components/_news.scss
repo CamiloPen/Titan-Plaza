@@ -1,0 +1,126 @@
+.News {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.02);
+    margin: 5px;
+
+    &:hover {
+        margin: -1.5px;
+    }
+
+    &__img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__color {
+        background: rgb(26,121,156);
+        background: linear-gradient(180deg, rgba(26,121,156,0.9) 0%, rgba(0,179,162,1) 100%);
+        padding-bottom: 60px;
+    }
+
+    &__back {
+        background-image: url("../img/news-back.png");
+        background-repeat: no-repeat;
+        margin-top: -80px;
+        background-position: 0 80px;
+    }
+
+    &__head {
+        background-image: url("../img/back-pool.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        max-width: 1300px;
+        font-size: 17px;
+        position: relative;
+        line-height: 23px;
+        margin: 0px auto 90px;
+        border-radius: 10px;
+        overflow: hidden;
+
+        &max {
+            max-width: 630px;
+            margin: 390px 35px 35px;
+
+            @media screen and (max-width: 700px) {
+                margin-top: 190px;
+            }
+        }
+
+        &top{
+            position: absolute;
+            top: 0;
+            right: 40px;
+            font-size: 21px;
+
+            &big {
+                font-size: 40px;
+            }
+        }
+    }
+
+    &__button {
+        background: white;
+        font-size: 15px;
+        width: 100%;
+        display: inline-block;
+        max-width: 190px;
+        padding: 10px;
+        text-align: center;
+        border-radius: 22px;
+        font-weight: bold;
+
+        &green {
+            background: #B2BD00;
+
+            &:hover {
+                background: #c0c55d;
+            }
+        }
+
+        &back {
+            background: #00B3A2;
+        }
+    }
+
+    &__center {
+        margin: auto;
+        max-width: 1300px;
+        text-align: center;
+
+        &img {
+            margin-top: 40px;
+            width: 100%;
+            max-width: 990px;
+        }
+    }
+
+    &__title {
+        font-size: 27px;
+
+        &back { 
+            background: #00B3A2;
+
+            &:hover {
+                background: #5fd1c6;
+            }
+        }
+
+        &big {
+            font-size: 21px;
+        }
+    }
+
+    &__info {
+        max-width: 690px;
+        margin: 50px auto;
+
+        &text {
+            text-align: left;
+            font-size: 15px;
+            line-height: 25px;
+        }
+    }
+}

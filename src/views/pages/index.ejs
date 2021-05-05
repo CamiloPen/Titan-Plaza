@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('../partials/head') %>
+<body id="body" class="BackBlack stop">
+    
+    <%- include('../layout/header') %> 
+
+    <div id="modPoints" class="home__modal">
+        <div class="modal__first">
+            <img src="assets/img/first.png" class="modal__firstimg">
+            <span onclick="Close()" class="close">&times;</span>
+        </div>
+    </div>
+        
+    <section class="slideshow">
+        <div class="slideshow__container">
+            <div><img src="assets/img/slider.png" class="slideshow__img"></div>
+          
+            <div><img src="assets/img/slider2.png" class="slideshow__img"></div>
+          
+            <div><img src="assets/img/slider3.jpg" class="slideshow__img"></div>
+        </div>
+        <a class="slideshow__prev">&#10094;</a>
+        <a class="slideshow__next">&#10095;</a>
+    </section>
+    <div class="home">
+        <div class="home__back">
+            <div class="home__margin">
+                <div class="home__flex home__flex--colorPi">
+                    <h2 class="home__flextitle">CARTELERA</h2>
+                    <a href="cartelera.html" class="home__flexlink home__flexlink--colorPi">Todas las Peliculas<span class="icon-ctrl foot__button"></span></a>
+                </div>
+                <div class="home__relative">
+                    <div class="home__showone">
+                        <%- include('../components/movies') %>
+                        <%- include('../components/movies') %>
+                    </div>
+                    <a id="OnePrev" class="home__prev home__flex--colorPi">&#10094;</a>
+                    <a id="OneNext" class="home__next home__flex--colorPi">&#10095;</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="home__imgback">
+            <div class="home__margin">
+                <div class="home__flex home__flex--colorBlue">
+                    <h2 class="home__flextitle">NOTICIAS</h2>
+                    <a href="noticias.html" class="home__flexlink home__flex--colorBlue">Todas las Noticias <span class="icon-ctrl foot__button"></span></a>
+                </div>
+                <div class="home__relative">
+                    <div class="home__showtwo home__gridnews">
+                        <div class="home__pad">
+                            <a href="noticia-pool.html" class="home__news">
+                                <img src="assets/img/koaj.png" class="home__newsimg">
+                                <div class="home__newsmargin">
+                                    <p><b>04 </b><span class="home__news--colorGr">Mayo</span></p>
+                                    <p class="home__flex--colorBlue"><b>Gran apertura del nuevo almacen KOAJ</b></p>
+                                    <p class="home__newstext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="home__pad">
+                            <a href="noticia-pool.html" class="home__news">
+                                <img src="assets/img/deadpool.png" class="home__newsimg">
+                                <div class="home__newsmargin">
+                                    <p><b>12 </b><span class="home__news--colorGr">Mayo</span></p>
+                                    <p class="home__flex--colorBlue"><b>Hoy se Estrena la Nueva Película de Deadpool</b></p>
+                                    <p class="home__newstext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="home__pad">
+                            <a href="noticia-pool.html" class="home__news">
+                                <img src="assets/img/koaj.png" class="home__newsimg">
+                                <div class="home__newsmargin">
+                                    <p><b>04 </b><span class="home__news--colorGr">Mayo</span></p>
+                                    <p class="home__flex--colorBlue"><b>Gran apertura del nuevo almacen KOAJ</b></p>
+                                    <p class="home__newstext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="home__pad">
+                            <a href="noticia-pool.html" class="home__news">
+                                <img src="assets/img/deadpool.png" class="home__newsimg">
+                                <div class="home__newsmargin">
+                                    <p><b>12 </b><span class="home__news--colorGr">Mayo</span></p>
+                                    <p class="home__flex--colorBlue"><b>Hoy se Estrena la Nueva Película de Deadpool</b></p>
+                                    <p class="home__newstext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <a id="TwoPrev" class="home__prev home__flex--colorBlue">&#10094;</a>
+                    <a id="TwoNext" class="home__next home__flex--colorBlue">&#10095;</a>
+                </div>
+            </div>
+            
+            <div class="home__margin">
+                <div class="home__flex home__flex--colorGreen">
+                    <h2 class="home__flextitle">EVENTOS</h2>
+                    <a href="eventos.html" class="home__flexlink home__flex--colorGreen">Todos los Eventos <span class="icon-ctrl foot__button"></span></a>
+                </div>
+                <div class="home__relative">
+                    <div class="home__showthree">
+                        <%- include('../components/eventos') %>
+                        <%- include('../components/eventos') %> 
+                    </div>
+                    <a id="ThreePrev" class="home__prev home__flex--colorGreen">&#10094;</a>
+                    <a id="ThreeNext" class="home__next home__flex--colorGreen">&#10095;</a>
+                </div>
+            </div>
+    
+            <div class="home__margin">
+                <div class="home__flex home__flex--colorRed">
+                    <h2 class="home__flextitle">PROMOCIONES</h2>
+                    <a href="" class="home__flexlink home__flex--colorRed">Todas las Promociones<span class="icon-ctrl foot__button"></span></a>
+                </div>
+                <div class="home__relative">
+                    <div class="home__showfour">
+                        <%- include('../components/promo') %>
+                        <%- include('../components/promo') %>        
+                    </div>
+                    <a id="FourPrev" class="home__prev home__flex--colorRed">&#10094;</a>
+                    <a id="FourNext" class="home__next home__flex--colorRed">&#10095;</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="home__margin home__service">
+            <div class="home__flex home__flex--colorOrange">
+                <h2 class="home__flextitle">SERVICIOS</h2>
+                <a href="servicios.html" class="home__flexlink home__flex--colorOrange">Todos los Servicios <span class="icon-ctrl foot__button"></span></a>
+            </div>
+            <div class="home__grid">
+                <div class="home__serviceback home__serviceparking">
+                    <div class="home__servicemax">
+                        <p class="home__servicetitle home__flex--colorWhite">PARQUEADERO</p>
+                        <p class="home__flex--colorWhite">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="" class="home__servicelink">Ver tarifas</a>
+                    </div>
+                </div>
+
+                <div class="home__serviceback home__servicepark">
+                    <div class="home__servicemax">
+                        <p class="home__servicetitle home__flex--colorWhite">PARQUE DE <br> DIVERSIONES</p>
+                        <a href="" class="home__servicelink">Conoce Más</a>
+                    </div>
+                </div>
+
+                <div class="home__serviceback home__servicearea">
+                    <div class="home__servicemax">
+                        <p class="home__servicetitle home__flex--colorWhite">SOLICITUD DE <br> AREAS COMUNES</p>
+                        <a href="" class="home__servicelink">Solicitar Aquí</a>
+                    </div>
+                </div>
+
+                <div class="home__serviceback home__servicepool">
+                    <div class="home__servicemax">
+                        <p class="home__servicetitle home__flex--colorWhite">PISCINA</p>
+                        <a href="" class="home__servicelink">Conoce Más</a>
+                    </div>
+                </div>
+
+                <div class="home__serviceback home__servicepet">
+                    <div class="home__servicemax">
+                        <p class="home__servicetitle home__flex--colorWhite">PET FRIENDLY</p>
+                        <p class="home__flex--colorWhite">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="" class="home__servicelink">Nuestro Reglamento</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+    </div>
+
+    <%- include('../layout/footer') %> 
+
+    <%- include('../partials/scripts') %>
+    
+</body>
+</html>

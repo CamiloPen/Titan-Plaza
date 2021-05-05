@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titan Plaza Mk</title>
+    <link rel="stylesheet" href="assets/css/stylesheet.min.css">
+</head>
+<body id="body">
+    
+    <div id="sale" class="modal">
+    <div class="modal__pad modal__padsale">
+        <div class="bill__sale">
+            <div class="bill__salegrid">
+                <img src="assets/img/factura-2.png" class="bill__saleimg">
+                <div class="bill__saleinfo">
+                    <p><b>Almacen</b></p>
+                    <p>Arturo Calle</p><br>
+                    <p><b>Fecha</b></p>
+                    <p>19 de julio, 2018</p><br>
+                    <p><b>Valor</b></p>
+                    <p>$150.000</p><br>
+                    <p><b>Número de transacción</b></p>
+                    <p>14562198931-1</p><br>
+                    <p><b>Estado</b></p>
+                    <p class="color--Na">En Proceso</p><br>
+                </div>
+            </div>
+            <div class="bill__salegrid">
+                <img src="assets/img/factura-2.png" class="bill__saleimg">
+                <div class="bill__saleinfo">
+                    <p><b>Almacen</b></p>
+                    <p>Arturo Calle</p><br>
+                    <p><b>Fecha</b></p>
+                    <p>19 de julio, 2018</p><br>
+                    <p><b>Valor</b></p>
+                    <p>$150.000</p><br>
+                    <p><b>Número de transacción</b></p>
+                    <p>14562198931-1</p><br>
+                    <p><b>Estado</b></p>
+                    <p class="color--Ve">Aprobado</p><br>
+                </div>
+            </div>
+            <div class="bill__salegrid">
+                <img src="assets/img/factura-2.png" class="bill__saleimg">
+                <div class="bill__saleinfo bill__saleinfotop">
+                    <p><b>Almacen</b></p>
+                    <p>Arturo Calle</p><br>
+                    <p><b>Fecha</b></p>
+                    <p>19 de julio, 2018</p><br>
+                    <p><b>Valor</b></p>
+                    <p>$150.000</p><br>
+                    <p><b>Número de transacción</b></p>
+                    <p>14562198931-1</p><br>
+                    <p><b>Estado</b></p>
+                    <p class="color--Ro">Rechazado</p><br>
+                    <div class="bill__salerejected">
+                        <p class="color--Ro"><b>Motivo de Rechazo</b></p>
+                        <p class="color--Ro bill__saletext">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bill__salegrid">
+                <img src="assets/img/factura-2.png" class="bill__saleimg">
+                <div class="bill__saleinfo">
+                    <p><b>Almacen</b></p>
+                    <p>Arturo Calle</p><br>
+                    <p><b>Fecha</b></p>
+                    <p>19 de julio, 2018</p><br>
+                    <p><b>Valor</b></p>
+                    <p>$150.000</p><br>
+                    <p><b>Número de transacción</b></p>
+                    <p>14562198931-1</p><br>
+                    <p><b>Estado</b></p>
+                    <p class="color--Ve">Aprobado</p><br>
+                </div>
+            </div>
+            <span onclick="Close3()" class="close">&times;</span>
+            <a id="prev" class="bill__saleprev icon-arrow-right2"></a>
+            <a id="next" class="bill__salenext icon-arrow-right2"></a>
+        </div>
+    </div>
+</div> 
+    <div id="Picture" class="modal">
+    <div class="modal__pad">
+        <div class="bill__modalcont">
+            <form action="/file-upload" class="dropzone drz" id="myAwesomeDropzone">
+               <div id="my">
+                <img src="assets/img/nube.png">
+                <p class="dropzonetext"><b>Arrastra una imagen de tu factura para subirla.</b></p>
+                <p class="dropzonetext">o haz clic en el boton de examinar </p>
+                <p class="dropzoneview"><b>Haz clic en el boton de examinar para subir una imágen.</b></p>
+                <div class="dz-default dz-message">
+                    <button class="dz-button" type="button"><span class="icon-folder-open">   </span>Examinar</button>
+                </div>
+               </div>
+            </form>
+            <p class="picture__foot">Solo imágenes en formatos JPG y PNG. Maximo 5MB</p>
+        </div>
+        <span onclick="Close2()" class="close">&times;</span> 
+    </div>
+</div> 
+    <header class="head" id="head">
+    <div class="head__grid" id="grid">
+        <div>
+            <img src="assets/img/logo.png" class="head__logo">
+        </div>
+        <div class="head__flex">
+            <div class="head__time">
+                <h4 class="head__timetext">Hoy abrimos hasta las: 9pm</h4>
+                <a href="#" class="head__timelink">Ver Horarios <span class="icon-ctrl head__timecrl"></span></a>
+            </div>
+            <div class="head__phone">
+                <p><span class="head__circle icon-phone"></span>Servicio al Cliente: 5280663</p>
+            </div>
+            <div class="head__add">
+                <p><span class="head__circle icon-location"></span>Cra. 17 # 89 - 31 Bogotá, Colombia</p>
+            </div>
+            <div class="head__social">
+                <a href="#" class="head__circle icon-facebook"></a>
+                <a href="#" class="head__circle icon-twitter"></a>
+                <a href="#" class="head__circle icon-instagram"></a>
+                <a href="#" class="head__circle icon-youtube"></a>
+            </div>
+        </div>
+        <div class="head__man-se">
+                <a class="head__mantum">Mantum</a>
+                <a class="head__circle icon-search"></a>
+        </div>
+        <div class="head__menuicon">
+            <a href="#"><span class="icon-menu" onclick="myFunction()"></span>
+        </div>
+        <div class="head__menusearchback">
+            <form>
+                <input id="search" type="name" class="head__menusearch" name="Buscar" placeholder="Buscar">
+            </form>
+        </div>
+        <div class="head__menu" id="menu">
+            <div class="head__menugrid">
+                <a href="index.html" class="head__menuoption head__menucolor head__menuoption--M0"><span class="icon"></span></a>
+                <a href="nosotros.html" class="head__menuoption">Nosotos</a>
+                <div onclick="store()" class="head__menuoption head__menurela"><p class="head__menurelatext">Almacenes <span class="icon-ctrl head__menumarketarrow"></span></p>
+                    <div class="head__submenu" id="store">
+                        <a href="lista-de-almacenes.html" class="head__submenulink">Almacenes</a><br><br>
+                        <a href="mapa.html" class="head__submenulink">Mapa</a><br><br>
+                        <a href="promociones.html" class="head__submenulink">Promociones</a>
+                    </div>
+                </div>
+                <a href="cartelera.html" class="head__menuoption">Cartelera</a>
+                <div onclick="service()" class="head__menuoption head__menurela"><p class="head__menurelatext">Noticias y Eventos<span class="icon-ctrl head__menumarketarrow"></span></p>
+                    <div class="head__submenu" id="service">
+                        <a href="noticias.html" class="head__submenulink">Noticias</a><br><br>
+                        <a href="eventos.html" class="head__submenulink">Eventos</a>
+                    </div>
+                </div>
+                <a href="servicios.html" class="head__menuoption">Servicios</a>
+                <a href="factura.html" class="head__menuoption">Facturas</a>
+                <a href="contacto.html" class="head__menuoption">Contacto</a>
+                <a href="marketplace.html" class="head__menuoption head__menumarket"><img src="assets/img/sda.png" class="head__menumarketimg"><h2 class="head__menurelatext"> Marketplace <span class="icon-ctrl head__menumarketarrow"></span></h2></a>
+                <div><a id="myBtn" class="head__btn">Ingresar / Registro</a></div>
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal__pad">
+                <div class="modal__content" id="cont">
+                    <img src="assets/img/imgmodal.png" class="modal__img">
+                    <div>
+                        <div class="modal__tab">
+                            <button class="modal__tablink--BRL modal__tablink" onclick="openform(event, 'Ingresar')" id="Open">Ingresar</button>
+                            <button class="modal__tablink--BRR modal__tablink" onclick="openform(event, 'Registrarse')">Regístrarse</button>
+                        </div>
+                        <div id="Ingresar" class="modal__tabcontent">
+                            <form>
+                                <button class="modal__tabfacebook"><span class="icon-facebook modal__tabtext"></span>FACEBOOK</button>  
+                            </form>      
+                            <hr><br><br>
+                            <form class="modal__form1">
+                                <label for="Email" class="modal__formlabel">Correo Electrónico</label><br>
+                                <input type="email" id="Email" class="modal__forminput" placeholder="Ingresa tu correo electrónico"><br><br>
+                                <label for="Pass" class="modal__formlabel">Contraseña</label><br>
+                                <input type="password" id="Pass" class="modal__forminput" placeholder="Ingresa tu contraseña">
+                                <div class="modal__pass">
+                                    <a href="#"><b>¿Olvidaste tu contraseña?</b></a>
+                                </div>
+                                <input type="submit" class="modal__formsubmit" value="Iniciar sesión">
+                            </form>
+                        </div>
+                        <div id="Registrarse" class="modal__tabcontent">
+                            <form>
+                                <button class="modal__tabfacebook modal__tabfacebook--MM"><span class="icon-facebook modal__tabtext"></span>FACEBOOK</button>  
+                            </form>  
+                            <hr><br>
+                            <form class="modal__form2">
+                                <label for="name" class="modal__formlabel">Nombre</label><br>
+                                <input type="text" id="name" class="modal__forminput" placeholder="Tu Nombre"><br>
+                                <label for="lastname" class="modal__formlabel">Apellido</label><br>
+                                <input type="text" id="lastname" class="modal__forminput" placeholder="Tu Apellido"><br>
+                                <label for="email" class="modal__formlabel">Correo Electrónico</label><br>
+                                <input type="email" id="email" class="modal__forminput" placeholder="Tu correo electrónico"><br>
+                                <label for="pass" class="modal__formlabel">Contraseña</label><br>
+                                <input type="password" id="pass" class="modal__forminput" placeholder="Tu contraseña"><br>
+                                <label for="confir" class="modal__formlabel">Confirmar Contraseña</label><br>
+                                <input type="password" id="confir" class="modal__forminput" placeholder="Tu contraseña"><br><br>
+                                <div class="">
+                                    <input type="checkbox" id="form__check"><label for="form__check">Acepto <a href="#">política de tratamiento de datos</a></label>
+                                </div><br><br>
+                                <input type="submit" class="modal__formsubmit" value="ENVIAR">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div class="bill">
+        <p class="bill__title"><b>PERFIL</b></p>
+        <div class="bill__max">
+            <div class="bill__maxback">
+                <a href="factura.html"><span class="icon-ctrl bill__maxctrl"></span><b>Volver</b></a>
+            </div>
+            <div class="bill__maxmore">
+                <p><b>Mis Facturas</b></p>
+                <button onclick="addimg()" class="bill__maxbutton bill__maxbutton--res"><span class="icon-camera">   </span>Agregar Factura</button>
+            </div>
+            <div class="bill__maxgrid">
+    <a class="bill__maxcont" onclick="opensale(1)"|    |>
+        <img src="assets/img/factura.png" class="bill__maxcontimg">
+        <div class="bill__maxcontmargin">
+            <p class="color--Mo">Americana de Colchones</p>
+            <p>$ 150.000 - 150 pts.</p>
+            <p class="color--Gr">01 de Septiembre, 2018 </p>
+            <p class="color--Na">En Proceso</p>
+        </div>
+    </a>
+    <a class="bill__maxcont" onclick="opensale(2)">
+        <img src="assets/img/factura.png" class="bill__maxcontimg">
+        <div class="bill__maxcontmargin">
+            <p class="color--Mo">Americana de Colchones</p>
+            <p>$ 150.000 - 150 pts.</p>
+            <p class="color--Gr">01 de Septiembre, 2018 </p>
+            <p class="color--Ve">Aprovado</p>
+        </div>
+    </a>
+    <a class="bill__maxcont" onclick="opensale(3)">
+        <img src="assets/img/factura.png" class="bill__maxcontimg">
+        <div class="bill__maxcontmargin">
+            <p class="color--Mo">Americana de Colchones</p>
+            <p>$ 150.000 - 150 pts.</p>
+            <p class="color--Gr">01 de Septiembre, 2018 </p>
+            <p class="color--Ro">Rechazado</p>
+        </div>
+    </a>
+    <a class="bill__maxcont" onclick="opensale(4)">
+        <img src="assets/img/factura.png" class="bill__maxcontimg">
+        <div class="bill__maxcontmargin">
+            <p class="color--Mo">Americana de Colchones</p>
+            <p>$ 150.000 - 150 pts.</p>
+            <p class="color--Gr">01 de Septiembre, 2018 </p>
+            <p class="color--Ve">Aprovado</p>
+        </div>
+    </a>
+</div>
+        </div>
+    </div>
+
+    <footer>
+    <div class="body__back"></div>
+
+    <div class="foot">
+        <div class="foot__max">
+            <img src="assets/img/logo_blanco.png" class="foot__logo">
+            <div class="foot__grid">
+                <div>
+                    <p class="foot__info">Cra. 17 # 89 - 31 <br><br>
+                        Bogotá, Colombia
+                        <br><br>
+                        info@centrocomercial.com
+                        <br><br>
+                        (1) 5280663</p>
+                </div>
+                <div class="foot__redes">
+                    <h4 class="foot__text--color1">Síguenos</h4><br>
+                    <a href="#" class="foot__socialcircle icon-facebook"></a>
+                    <a href="#" class="foot__socialcircle icon-twitter"></a>
+                    <a href="#" class="foot__socialcircle icon-instagram"></a>
+                    <a href="#" class="foot__socialcircle icon-youtube"></a>
+                </div>
+                <div class="foot__company">
+                    <h4 class="foot__text--color1">Compañía</h4><br>
+                    <ul>
+                        <li><a href="lista-de-almacenes.html" class="foot__text--color2">Tiendas</a></li> <br>
+                        <li><a href="facturas.html" class="foot__text--color2">Facturas</a></li><br>
+                        <li><a href="contacto.html" class="foot__text--color2">Contáctenos</a></li>
+                    </ul>
+                </div>
+                <div class="foot__news">
+                    <h4 class="foot__text--color1">Recibe las Últimas Noticias del Centro Comercial</h4>
+                    <div class="foot__email">
+                    <form action="">
+                        <input type="email" class="foot__newsemail" name="correo" placeholder="Correo electrónico"><button type="submit" class="icon-ctrl foot__button"></button>
+                    </form>
+                    </div>
+                </div>
+                <div class="foot__servicio">
+                    <p class="foot__copy foot__text--color1">Centro Comercial © 2020 / Todos los derechos reservados</p>
+                    <div class="foot__serviciotext">
+                        <h4 class=" foot__text--color1">Un servicio de:</h4>
+                        <img src="assets/img/codelabs.png" class="foot__servicioimg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer> 
+
+    <script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/slick.js"></script>
+<script src="assets/js/dropzone.min.js"></script>
+<script src="assets/js/main.min.js"></script>
+    
+</body>
+</html>

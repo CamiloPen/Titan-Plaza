@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('../partials/head') %>
+<body id="body">
+
+    <%- include('../layout/header') %>
+
+    <div class="cinema">
+        <div class="cinema__margin">
+            <div class="cinema__redes">
+                <a href="cartelera.html" class="cinema__redeslink"><span class="icon-ctrl cinema__redesarrow"></span>Volver</a>
+                <div>
+                    <p class="cinema__redes--color">Compartir: <span class="icon-facebook cinema__redesmargin home__flex--colorPi"></span> <span class="icon-twitter cinema__redesmargin home__flex--colorPi"></span></p>
+                </div>
+            </div>
+            <div class="cinema__movie">
+                <img src="assets/img/Grupo 3233.png" class="cinema__movieimg">
+                <div class="cinema__movieinfo">
+                    <p class="home__flex--colorPi cinema__titlejust"><b>Deadpool 2</b></p>
+                    <div class="cinema__movieflex">
+                        <p class="cinema__moviesquare cinema__moviesquare--red">2D</p>
+                        <p class="cinema__moviesquare cinema__moviesquare--red">3D</p>
+                        <p class="cinema__moviesquare cinema__moviesquare--white">Doblada</p>
+                    </div>
+                    <div class="cinema__movieflex">
+                        <p><b>Fecha de Estreno</b><br>18 de Mayo, 2019</p>
+                        <p><b>Duración</b><br>115 min.</p>
+                        <p><b>Clasificación</b><br>7-A</p>
+                    </div>
+                    <div>
+                        <p class="cinema__movietitle">Horarios</p>
+                        <div class="cinema__movieflex">
+                            <p class="cinema__moviesquare cinema__moviesquare--black">17:50</p>
+                            <p class="cinema__moviesquare cinema__moviesquare--black">20:15</p>
+                            <p class="cinema__moviesquare cinema__moviesquare--black">21:35</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="cinema__movietitle">Descripción</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div>
+                        <p class="cinema__movietitle">Trailer</p>
+                        <iframe width="100%" height="360px" src="https://www.youtube.com/embed/XF2cUhfxhs4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('../layout/footer') %> 
+
+    <%- include('../partials/scripts') %>
+    
+</body>
+</html>

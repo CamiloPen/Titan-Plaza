@@ -1,0 +1,45 @@
+<div id="Pic" class="modal">
+    <div class="modal__pad">
+        <div class="Add__content" id="cont">
+            <img src="assets/img/factura-2.png" class="Add__img">
+            <div>
+                <form class="Add__margin">
+                    <p class="Add__center"><b>Agregar Factura</b></p>
+                    <label class="Add__label" for="almacen">Almacen</label><br>
+                    <input type="text" id="almacen" class="Add__input" placeholder="Ingresa nombre de almacen"><br>
+                    <label class="Add__label">Fecha</label><br>
+                    <input type="date" class="Add__input" placeholder="Seleciona la fecha de la factura"><br>
+                    <label class="Add__label">Valor</label><br>
+                    <input type="number" class="Add__input" placeholder="Ingresa el valor de la factura"><br>
+                    <label class="Add__label">Número de transacción</label><br>
+                    <input type="number" class="Add__input" placeholder="Ingresa el número de transacción"><br>
+                    <label for="confir" class="Add__label">Campaña</label><br>
+                    <div class="Add__input">
+                        <select class="bill__modalsele">
+                            <option value="none">Selecciona una campaña</option>
+                            <option>Campaña 1</option>
+                            <option>Campaña 2</option>
+                            <option>Campaña 3</option>
+                        </select>
+                        <span class="icon-ctrl spanarrow"></span>
+                    </div><br><br><br>
+                    <input type="submit" class="modal__formsubmit" value="Agregar Factura" onclick="addbill()">
+                    <div onclick="Close4()" class="Add__center2"><a href="#">Cancelar</a></div>
+                </form>
+            </div>
+        </div> 
+        <span onclick="Close4()" class="close">&times;</span>
+    </div>
+</div>
+
+<div id="acept" class="aceptmodal">
+    <div class="aceptback">
+        <div class="acept">
+            <form>
+                <p><b>Esta factura quedara registrada bajo la camapaña xxxxxx</b></p>
+                <p>¿Está seguro que desea registrarla?</p>
+                <button class="check__btncp" type="submit">Agregar</button>
+            </form>
+        </div>
+    </div>
+</div>

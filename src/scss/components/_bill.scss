@@ -1,0 +1,538 @@
+.bill {
+    margin-top: 117px;
+    padding-bottom: 80px;
+    background-color: #FAFAFA;
+    background-image: url("../img/fondo.png");
+    background-repeat: no-repeat;
+
+    @media screen and (max-width: 1525px) {
+        margin-top: 77px;
+    }
+
+    &__title {
+        text-align: center;
+        padding: 70px;
+        font-size: 21px;
+
+        @media screen and (max-width: 1000px) {
+            padding: 30px;
+        }
+    }
+
+    &__grid {
+        display: grid;
+        max-width: 1300px;
+        margin:auto;
+        grid-template-columns: 1.2fr 4fr;
+        column-gap: 20px;
+    
+        @media screen and (max-width: 1208px) {
+            padding: 0 20px;
+        }
+
+        @media screen and (max-width: 870px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media screen and (max-width: 834px) {
+            grid-template-columns: 1fr;
+        }
+
+        @media screen and (max-width: 350px) {
+            padding: 0 10px;
+        }
+    }
+    
+    &__slideshow {
+        width: 100%;
+        padding-left: 0 20px;
+        margin: auto;
+        position: relative;
+
+        @media screen and (max-width: 1290px) {
+            max-width: 750px;
+        }
+
+        @media screen and (max-width: 1130px) {
+            max-width: 620px;
+        }
+
+        @media screen and (max-width: 1065px) {
+            max-width: 570px;
+        }
+
+        @media screen and (max-width: 910px) {
+            max-width: 400px;
+        }
+
+        @media screen and (max-width: 830px) {
+            max-width: 480px;
+        }
+        
+        @media screen and (max-width: 605px) {
+            max-width: 350px;
+        }
+
+        @media screen and (max-width: 450px) {
+            max-width: 300px;
+        }
+
+        @media screen and (max-width: 400px) {
+            max-width: 250px;
+        }
+
+        @media screen and (max-width: 350px) {
+            max-width: 180px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 17px;
+        text-align: left;
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+}
+
+.stop {
+    overflow: hidden;
+}
+
+#menu__info {
+    display: block;
+    color: $cp;
+    position: relative;
+
+    @media screen and (max-width: 834px) {
+        justify-self: center;
+        background: #EBEBEB;
+        padding: 15px;
+        border-radius: 30px;
+        max-width: 500px;
+        margin: auto;
+    }
+}
+
+.icon-arrow-right2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &right {
+        right: 0;
+
+        @media screen and (max-width: 834px) {
+            display: none;
+        }
+    }
+}
+
+.bill__person {
+    background: $csW;
+    padding: 20px;
+    max-height: 420px;
+    border-radius: 10px;
+    font-size: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+    margin-bottom: 200px;
+
+    @media screen and (max-width: 834px) {
+        margin-bottom: 30px;
+    }
+
+    &BTN {
+        display: none;
+        position: absolute;
+        margin-left: 10px;
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+
+        @media screen and (max-width: 834px) {
+            display: inline;
+        }
+    }
+
+    &cont {
+        line-height: 21px;
+
+        @media screen and (max-width: 834px) {
+            text-align: center;
+        }
+    }
+
+    &menu {
+        @media screen and (max-width: 834px) {
+            display: none;
+        }
+
+        &SH {
+            display: block;
+        }
+    }
+
+    &info {
+        text-align: center;
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 834px) {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            column-gap: 20px;
+        }
+
+        &Img {
+            @media screen and (max-width: 834px) {
+                justify-self: end;
+            }
+        }
+
+        &Ema {
+            @media screen and (max-width: 834px) {
+                text-align: left;
+            }
+        }
+
+        &LI {
+            opacity: 0.5;
+        }
+    }
+
+    &option {
+        display: block;
+        font-weight: bold;
+        color: black;
+    }
+}
+
+.bill__dots {
+    position: relative;
+    background: $cp;
+    background-image: url("../img/globos.png");
+    background-position: 100%;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 15px 0;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 834px) {
+        padding: 0;
+    }
+
+    @media screen and (max-width: 500px) {
+        background-position: 160%;
+    }
+
+    &text {
+        color: $csW;
+        margin-left: 30px;
+        max-width: 450px;
+        z-index: 1;
+
+        @media screen and (max-width: 600px) {
+            max-width: 210px;
+        }
+
+        &--BO {
+            font-size: 24px;
+
+            @media screen and (max-width: 600px) {
+                font-size: 17px;
+            }
+        }
+
+        &--SPA {
+            font-size: 15px;  
+            
+            @media screen and (max-width: 600px) {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+.bill__card {
+    background: linear-gradient(157deg, rgba(144,51,146,1) 0%, rgba(209,74,111,1) 100%);
+    border-radius: 10px;
+
+    &back {
+        background-image: url("../img/back.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 20px 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: white;
+
+        @media screen and (max-width: 834px) {
+            grid-template-columns: 1fr;
+        }
+        
+        @media screen and (max-width: 600px) {
+            grid-template-rows: repeat (3, 1fr);
+        }
+    }
+
+    &Name {
+        font-size: 24px;
+        color: $csW;
+
+        @media screen and (max-width: 600px) {
+            font-size: 15px;
+        }
+    }
+
+    &Points {
+        font-size: 32px;
+        font-weight: bold;
+        color: white;
+
+        @media screen and (max-width: 600px) {
+            font-size: 19px;
+            margin-top: -15px;
+        }
+    }
+
+    &Flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &Text {
+        color: $csW;
+        font-size: 24px;
+
+        @media screen and (max-width: 600px) {
+            font-size: 15px; 
+        }
+    }
+
+    &Light {
+        opacity: 0.6;
+        font-size: 20px;
+        margin-bottom: 20px;
+
+        @media screen and (max-width: 600px) {
+            font-size: 15px; 
+        }
+    }
+
+    &Pict {
+        padding-top: 25px;
+        text-align: right; 
+        
+        @media screen and (max-width: 600px) {
+            grid-row: 3/4;
+            text-align: center; 
+        }
+    }
+
+    &Btn {
+        background: white;
+        color: $cp;
+        font-size: 17px;
+        padding: 13px;
+        border-radius: 20px;
+        width: 240px;
+        font-weight: bold;
+
+        &LI {
+            background: rgba(255, 255, 255, 0.2);
+            color: $csW;
+        }
+
+        &RO {
+            position: absolute;
+            margin-left: 10px;
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+    }
+
+    &Num {
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        grid-column: 1/3;
+        align-items: center;
+
+        @media screen and (max-width: 600px) {
+            margin-top: 0;
+        }
+    }
+
+    &Img {
+        @media screen and (max-width: 600px) {
+            width: 50%;
+            max-width: 150px;
+        }
+    }
+}
+
+.bill__motor {
+    margin-top: 60px;
+
+    &grid {
+        display: grid;
+        margin-top: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px 15px;
+
+        @media screen and (max-width: 1065px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media screen and (max-width: 605px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &box {
+        background: $csW;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        width: 100%;
+        margin: auto;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.02);
+
+        @media screen and (max-width: 1065px) {
+            width: 90%;
+        }
+
+        @media screen and (max-width: 605px) {
+            max-width: 350px;
+        }
+    }
+
+    &text {
+        margin-left: 20px;
+        color: #B4BA45;
+    }
+
+    &img {
+        width: 100%;
+    }
+}
+
+.bill__phone {
+    margin: 60px 0;
+    max-width: 900px;
+
+    &content {
+        margin: 60px auto;
+        overflow: hidden;
+    }
+
+    &Flex {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &Btn {
+        background: $csW;
+        color: #F06031;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 13px 50px;
+        border-radius: 20px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+        
+    }
+
+    &Crl {
+        position: absolute;
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+
+    &box {
+        padding: 10px;
+    }
+
+    &img {
+        width: 100%;
+        margin: auto;
+    }
+
+    &view {
+        width: 100%;
+        background: $csW;
+        border-radius: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.02);
+    }
+
+    &MA {
+        padding: 5px 20px;
+    }
+
+    &text {
+        color: #F06031;
+    }
+
+    &next {
+        right: -50px;
+
+        @media screen and (max-width: 350px) {
+            right: -10px;
+        }
+    }
+
+    &prev {
+        left: -50px;
+
+        @media screen and (max-width: 350px) {
+            left: -10px;
+        }
+    }
+
+    &prev, &next {
+        position: absolute;
+        padding: 14px 19px;
+        top: -40px;
+        font-size: 15px;
+        color: #F06031;
+        background: $csW;
+        transition: 0.6s ease;
+        border-radius: 50%;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.02);
+
+        @media screen and (max-width: 350px) {
+            font-size: 14px;
+            padding: 10px 15px;
+        }
+
+        &:hover{
+            background-color: $csG;
+        }
+    }
+}
+
+.bill__info {
+    background: #333333;
+    padding: 30px 80px;
+    border-radius: 10px; 
+    margin-bottom: 60px;
+
+    &movil {
+        padding: 2px 60px;
+        margin: 50px auto;
+    }
+    
+    &text{
+        color: white;
+        display: flex;
+    }
+
+    &circle {
+        background: white;
+        align-self: center;
+        font-size: 13px;
+        color: black;
+        padding: 2px 7px;
+        border-radius: 50%;
+        margin-left: -40px;
+        margin-right: 15px;
+    }
+}

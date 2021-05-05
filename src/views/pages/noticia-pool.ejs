@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('../partials/head') %>
+<body id="body">
+
+    <%- include('../layout/header') %>
+
+    <div class="cinema">
+        <div class="prom__back">
+            <div class="cinema__margin">
+                <div class="cinema__redes">
+                    <a href="noticias.html" class="cinema__redeslink News__titleback"><span class="icon-ctrl cinema__redesarrow"></span>Volver</a>
+                    <div>
+                        <p class="cinema__redes--color">Compartir: <span class="icon-facebook cinema__redesmargin home__flex--colorBlue"></span> <span class="icon-twitter home__flex--colorBlue cinema__redesmargin"></span></p>
+                    </div>
+                </div>
+                <div class="News__center">
+                    <p class="home__flex--colorBlue News__title"><b>Hoy se Estrena la Nueva Película de Deadpool</b></p>
+                    <img src="assets/img/new-pool.png" class="News__centerimg"> 
+                    <div class="News__info">
+                        <p class="News__infotext">
+                            <b>Una de las más famosas camaraderías y rivalidades de Marvel Comics está siendo llevada al cine en Deadpool 2 (mayo de 2018), donde el ya querido  Wade Wilson (Ryan Reynolds) hará hasta lo imposible para salvar a un niño del viajero del tiempo Cable (Josh Brolin), hoy enemigo, pero más tarde podría ser algo más.</b>
+                            <br><br>
+                            Deadpool 2 es la secuela de la película de 2016, donde Wade ya está asentado como un singular superhéroe – mucho más violento que sus pares de la pantalla grande – de buenos sentimientos, divertido, pero bastante vulgar y sádico.
+                            <br><br>
+                            Para esta segunda aventura, además de Cable – hijo de Cyclops, de los X-Men, en los cómics –, Deadpool será acompañado por varias otras figuras para conformar entre todos a los X-Force, un grupo de Marvel Comics paralelo a los X-Men, de métodos no tan superheroicos. En el segundo tráiler de la película, Deadpoolmenciona que para ser parte de su grupo “súper duper” es necesario ser “duro, moralmente flexible y lo suficientemente joven para sostener su propia franquicia de 10 a 12 años”.
+                            <br><br>
+                            Tras sobrevivir a un ataque bovino casi faltal, un desfigurado chef de cafetería, Wade Wilson, trata de cumplir su sueño de convertirse en el camarero más famoso del lugar, al tiempo que trata de hacer frente a su pérdida del sentido del gusto. En la búsqueda para la recuperación de este, así como la de un condensador de flujo, Wade deberá luchar contra ninjas, yakuzas y un grupo de perros sexualmente agresivos, mientras recorre el mundo para descubrir la importancia de la familia, la amistad, el sabor y conseguir ganar el codiciado título que pone en las tazas de café: “El mejor amante del mundo”… Secuela de la exitosa película (recaudó más de 780 millones de dólares en todo el mundo) parodia de los superhéroes mutantes del 2016, también protagonizada por Reynolds.
+                        </p>
+                        <br><br>
+                        <iframe width="100%" height="360px" src="https://www.youtube.com/embed/XF2cUhfxhs4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cinema__margin">
+            <div class="cinema__content">
+                <h2 class="News__titlebig home__flex--colorBlue">Noticias</h2><br>
+                <div class="cinema__grid">
+                    <%- include('../components/noticias') %>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br>
+    </div>
+
+    <%- include('../layout/footer') %> 
+
+    <%- include('../partials/scripts') %>
+    
+</body>
+</html>

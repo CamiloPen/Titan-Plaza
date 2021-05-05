@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('../partials/head') %>
+<body id="body">
+    <%- include('../layout/header') %>
+
+    <div class="work">
+        <p class="cinema__title cinema__title--Vi">TRABAJE CON NOSOTROS</p>
+        <div class="work__content">
+            <img class="work__contentimg" src="assets/img/trabaje-form.png">
+            <form class="work__contentform">
+                <label class="work__contentlabel" for=""><b>Nombre y Apellido</b></label><br><input class="work__contentinput" type="text" placeholder="Ingresa tu nombre completo"><br><br>
+                <label class="work__contentlabel" for=""><b>Correo Electrónico</b></label><br><input class="work__contentinput" type="text" placeholder="Ingresa tu nombre completo"><br><br>
+                <p class="work__contentlabel"><b>Hoja de Vida</b></p>
+                <div class="work__contentdrop" id="Dropzone">
+                    <p class="dropzonetext ">Arrastra un archivo o seleccionalo para cargar. (PDF, DOC)</p>
+                    <div class="dz-default dz-message">
+                        <button class="dz-button" type="button"><span class="icon-folder-open">   </span>Cargar Archivo</button>
+                    </div>
+                </div><br><br>
+                <input type="checkbox"><label for="">Acepto los <a href="">Términos y Condiciones</a> </label>
+                <button class="bill__modalsubmit" type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br>
+
+    <%- include('../layout/footer') %> 
+
+    <%- include('../partials/scripts') %>
+    
+</body>
+</html>

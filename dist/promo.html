@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titan Plaza Mk</title>
+    <link rel="stylesheet" href="assets/css/stylesheet.min.css">
+</head>
+<body id="body">
+
+    <header class="head" id="head">
+    <div class="head__grid" id="grid">
+        <div>
+            <img src="assets/img/logo.png" class="head__logo">
+        </div>
+        <div class="head__flex">
+            <div class="head__time">
+                <h4 class="head__timetext">Hoy abrimos hasta las: 9pm</h4>
+                <a href="#" class="head__timelink">Ver Horarios <span class="icon-ctrl head__timecrl"></span></a>
+            </div>
+            <div class="head__phone">
+                <p><span class="head__circle icon-phone"></span>Servicio al Cliente: 5280663</p>
+            </div>
+            <div class="head__add">
+                <p><span class="head__circle icon-location"></span>Cra. 17 # 89 - 31 Bogotá, Colombia</p>
+            </div>
+            <div class="head__social">
+                <a href="#" class="head__circle icon-facebook"></a>
+                <a href="#" class="head__circle icon-twitter"></a>
+                <a href="#" class="head__circle icon-instagram"></a>
+                <a href="#" class="head__circle icon-youtube"></a>
+            </div>
+        </div>
+        <div class="head__man-se">
+                <a class="head__mantum">Mantum</a>
+                <a class="head__circle icon-search"></a>
+        </div>
+        <div class="head__menuicon">
+            <a href="#"><span class="icon-menu" onclick="myFunction()"></span>
+        </div>
+        <div class="head__menusearchback">
+            <form>
+                <input id="search" type="name" class="head__menusearch" name="Buscar" placeholder="Buscar">
+            </form>
+        </div>
+        <div class="head__menu" id="menu">
+            <div class="head__menugrid">
+                <a href="index.html" class="head__menuoption head__menucolor head__menuoption--M0"><span class="icon"></span></a>
+                <a href="nosotros.html" class="head__menuoption">Nosotos</a>
+                <div onclick="store()" class="head__menuoption head__menurela"><p class="head__menurelatext">Almacenes <span class="icon-ctrl head__menumarketarrow"></span></p>
+                    <div class="head__submenu" id="store">
+                        <a href="lista-de-almacenes.html" class="head__submenulink">Almacenes</a><br><br>
+                        <a href="mapa.html" class="head__submenulink">Mapa</a><br><br>
+                        <a href="promociones.html" class="head__submenulink">Promociones</a>
+                    </div>
+                </div>
+                <a href="cartelera.html" class="head__menuoption">Cartelera</a>
+                <div onclick="service()" class="head__menuoption head__menurela"><p class="head__menurelatext">Noticias y Eventos<span class="icon-ctrl head__menumarketarrow"></span></p>
+                    <div class="head__submenu" id="service">
+                        <a href="noticias.html" class="head__submenulink">Noticias</a><br><br>
+                        <a href="eventos.html" class="head__submenulink">Eventos</a>
+                    </div>
+                </div>
+                <a href="servicios.html" class="head__menuoption">Servicios</a>
+                <a href="factura.html" class="head__menuoption">Facturas</a>
+                <a href="contacto.html" class="head__menuoption">Contacto</a>
+                <a href="marketplace.html" class="head__menuoption head__menumarket"><img src="assets/img/sda.png" class="head__menumarketimg"><h2 class="head__menurelatext"> Marketplace <span class="icon-ctrl head__menumarketarrow"></span></h2></a>
+                <div><a id="myBtn" class="head__btn">Ingresar / Registro</a></div>
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal__pad">
+                <div class="modal__content" id="cont">
+                    <img src="assets/img/imgmodal.png" class="modal__img">
+                    <div>
+                        <div class="modal__tab">
+                            <button class="modal__tablink--BRL modal__tablink" onclick="openform(event, 'Ingresar')" id="Open">Ingresar</button>
+                            <button class="modal__tablink--BRR modal__tablink" onclick="openform(event, 'Registrarse')">Regístrarse</button>
+                        </div>
+                        <div id="Ingresar" class="modal__tabcontent">
+                            <form>
+                                <button class="modal__tabfacebook"><span class="icon-facebook modal__tabtext"></span>FACEBOOK</button>  
+                            </form>      
+                            <hr><br><br>
+                            <form class="modal__form1">
+                                <label for="Email" class="modal__formlabel">Correo Electrónico</label><br>
+                                <input type="email" id="Email" class="modal__forminput" placeholder="Ingresa tu correo electrónico"><br><br>
+                                <label for="Pass" class="modal__formlabel">Contraseña</label><br>
+                                <input type="password" id="Pass" class="modal__forminput" placeholder="Ingresa tu contraseña">
+                                <div class="modal__pass">
+                                    <a href="#"><b>¿Olvidaste tu contraseña?</b></a>
+                                </div>
+                                <input type="submit" class="modal__formsubmit" value="Iniciar sesión">
+                            </form>
+                        </div>
+                        <div id="Registrarse" class="modal__tabcontent">
+                            <form>
+                                <button class="modal__tabfacebook modal__tabfacebook--MM"><span class="icon-facebook modal__tabtext"></span>FACEBOOK</button>  
+                            </form>  
+                            <hr><br>
+                            <form class="modal__form2">
+                                <label for="name" class="modal__formlabel">Nombre</label><br>
+                                <input type="text" id="name" class="modal__forminput" placeholder="Tu Nombre"><br>
+                                <label for="lastname" class="modal__formlabel">Apellido</label><br>
+                                <input type="text" id="lastname" class="modal__forminput" placeholder="Tu Apellido"><br>
+                                <label for="email" class="modal__formlabel">Correo Electrónico</label><br>
+                                <input type="email" id="email" class="modal__forminput" placeholder="Tu correo electrónico"><br>
+                                <label for="pass" class="modal__formlabel">Contraseña</label><br>
+                                <input type="password" id="pass" class="modal__forminput" placeholder="Tu contraseña"><br>
+                                <label for="confir" class="modal__formlabel">Confirmar Contraseña</label><br>
+                                <input type="password" id="confir" class="modal__forminput" placeholder="Tu contraseña"><br><br>
+                                <div class="">
+                                    <input type="checkbox" id="form__check"><label for="form__check">Acepto <a href="#">política de tratamiento de datos</a></label>
+                                </div><br><br>
+                                <input type="submit" class="modal__formsubmit" value="ENVIAR">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div class="cinema">
+        <div class="prom__back">
+            <div class="cinema__margin">
+                <div class="cinema__redes">
+                    <a href="promociones.html" class="cinema__redeslink prom__title"><span class="icon-ctrl cinema__redesarrow"></span>Volver</a>
+                    <div>
+                        <p class="cinema__redes--color">Compartir: <span class="icon-facebook cinema__redesmargin home__flex--colorRed"></span> <span class="icon-twitter home__flex--colorRed cinema__redesmargin"></span></p>
+                    </div>
+                </div>
+        
+                <div class="prom__grid">
+                    <img src="assets/img/promo.png" class="prom__gridimg">
+                    <div>
+                        <p class="home__flex--colorRed  prom__titlesize"><b>Adidas Brand Sale. Todos los productos al -50%</b></p>
+                        <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="bill__maxcompacale">
+                            <img src="assets/img/calendario.png" class="bill__maxcompacaleimg">
+                            <p class="bill__maxcontmargin"><b>Válido hasta</b><br>26 de Junio, 2018</p>
+                        </div>
+                        <div class="">
+                            <p class="prom__gridtext">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cinema__margin">
+            <div class="cinema__grid prom__margin">
+                <p class="home__flex--colorRed prom__margintext">Otras Promociones</p>
+                <a href="promo.html" class="home__pad">
+    <div class="home__prom home__news">
+        <img src="assets/img/promo1.png" class="home__eventsimg">
+        <div class="home__prommargin">
+            <p class="home__flex--colorRed"><b>Adidas Brand Sale. Todos los productos al -50%</b></p>
+            <p>Pull&Bear</p>
+        </div>
+        <div class="home__promfoot">
+            <p class="home__news--colorGr">Vence: 25 de Mayo, 2018</p>
+        </div>
+    </div>
+</a>
+<a href="promo.html" class="home__pad">
+    <div class="home__prom home__news">
+        <img src="assets/img/promo2.png" class="home__eventsimg">
+        <div class="home__prommargin">
+            <p class="home__flex--colorRed"><b>Adidas Brand Sale. Todos los productos al -50%</b></p>
+            <p>Levis</p>
+        </div>
+        <div class="home__promfoot">
+            <p class="home__news--colorGr">Vence: 25 de Mayo, 2018</p>
+        </div>
+    </div>
+</a>
+<a href="promo.html" class="home__pad">
+    <div class="home__prom home__news">
+        <img src="assets/img/promo3.png" class="home__eventsimg">
+        <div class="home__prommargin">
+            <p class="home__flex--colorRed"><b>Adidas Brand Sale. Todos los productos al -50%</b></p>
+            <p>El Corral</p>
+        </div>
+        <div class="home__promfoot">
+            <p class="home__news--colorGr">Vence: 25 de Mayo, 2018</p>
+        </div>
+    </div>
+</a>
+<a href="promo.html" class="home__pad">
+    <div class="home__prom home__news">
+        <img src="assets/img/promo4.png" class="home__eventsimg">
+        <div class="home__prommargin">
+            <p class="home__flex--colorRed"><b>Adidas Brand Sale. Todos los productos al -50%</b></p>
+            <p>Zara</p>
+        </div>
+        <div class="home__promfoot">
+            <p class="home__news--colorGr">Vence: 25 de Mayo, 2018</p>
+        </div>
+    </div>
+</a>
+            </div>
+        </div>
+        
+    </div>
+
+<footer>
+    <div class="body__back"></div>
+
+    <div class="foot">
+        <div class="foot__max">
+            <img src="assets/img/logo_blanco.png" class="foot__logo">
+            <div class="foot__grid">
+                <div>
+                    <p class="foot__info">Cra. 17 # 89 - 31 <br><br>
+                        Bogotá, Colombia
+                        <br><br>
+                        info@centrocomercial.com
+                        <br><br>
+                        (1) 5280663</p>
+                </div>
+                <div class="foot__redes">
+                    <h4 class="foot__text--color1">Síguenos</h4><br>
+                    <a href="#" class="foot__socialcircle icon-facebook"></a>
+                    <a href="#" class="foot__socialcircle icon-twitter"></a>
+                    <a href="#" class="foot__socialcircle icon-instagram"></a>
+                    <a href="#" class="foot__socialcircle icon-youtube"></a>
+                </div>
+                <div class="foot__company">
+                    <h4 class="foot__text--color1">Compañía</h4><br>
+                    <ul>
+                        <li><a href="lista-de-almacenes.html" class="foot__text--color2">Tiendas</a></li> <br>
+                        <li><a href="facturas.html" class="foot__text--color2">Facturas</a></li><br>
+                        <li><a href="contacto.html" class="foot__text--color2">Contáctenos</a></li>
+                    </ul>
+                </div>
+                <div class="foot__news">
+                    <h4 class="foot__text--color1">Recibe las Últimas Noticias del Centro Comercial</h4>
+                    <div class="foot__email">
+                    <form action="">
+                        <input type="email" class="foot__newsemail" name="correo" placeholder="Correo electrónico"><button type="submit" class="icon-ctrl foot__button"></button>
+                    </form>
+                    </div>
+                </div>
+                <div class="foot__servicio">
+                    <p class="foot__copy foot__text--color1">Centro Comercial © 2020 / Todos los derechos reservados</p>
+                    <div class="foot__serviciotext">
+                        <h4 class=" foot__text--color1">Un servicio de:</h4>
+                        <img src="assets/img/codelabs.png" class="foot__servicioimg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer> 
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/slick.js"></script>
+<script src="assets/js/dropzone.min.js"></script>
+<script src="assets/js/main.min.js"></script>
+
+</body>
+</html>

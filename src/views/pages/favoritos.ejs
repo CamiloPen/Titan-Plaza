@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('../partials/head') %>
+<body id="body">
+    
+    <%- include('../layout/header') %>
+
+    <div class="bill">
+            <p class="bill__title"><b>PERFIL</b></p>
+        <div class="data__grid">
+            <%- include('../components/perfil') %>
+            <div class="store__column">
+                <div class="store__boxs store__boxsfavo">
+                    <a href="tienda.html">
+                        <img src="assets/img/pri.png" class="store__img">
+                        <div class="store__boxsML">
+                            <p class="store__text">Adidas</p>
+                            <p>Deporte, Vestuario, Calzado</p>
+                        </div>
+                        <hr>
+                        <p class="store__boxsML store__text store__textBack"><span class="icon-location"></span> Local 3-55</p>
+                    </a>
+                    <button class="store__boxheart store__boxheartfavo icon-heart" onclick="changeColor(this)"></button>
+                </div>
+                <div class="store__boxs store__boxsfavo">
+                    <a href="tienda.html">
+                        <img src="assets/img/sec.png" class="store__img">
+                        <div class="store__boxsML">
+                            <p class="store__text">Americanino</p>
+                            <p>Vestuario, Calzado</p>
+                        </div>
+                        <hr>
+                        <p class="store__boxsML store__text store__textBack"><span class="icon-location"></span> Local 3-55</p>
+                    </a>
+                    <button class="store__boxheart store__boxheartfavo icon-heart" onclick="changeColor(this)"></button>
+                </div>
+                <div class="store__boxs store__boxsfavo">
+                    <a href="tienda.html">
+                        <img src="assets/img/ter.png" class="store__img">
+                        <div class="store__boxsML">
+                            <p class="store__text">Bella Piel</p>
+                            <p>Salud y Belleza</p>
+                        </div>
+                        <hr>
+                        <p class="store__boxsML store__text store__textBack"><span class="icon-location"></span> Local 3-55</p>
+                    </a>
+                    <button class="store__boxheart store__boxheartfavo icon-heart" onclick="changeColor(this)"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('../layout/footer') %> 
+
+    <%- include('../partials/scripts') %>
+    
+</body>
+</html>

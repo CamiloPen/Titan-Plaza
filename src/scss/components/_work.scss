@@ -1,0 +1,78 @@
+.work__ {
+    &content {
+        max-width: 1300px;
+        font-size: 15px;
+        margin: 0 auto;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        @media screen and (max-width: 780px) {
+            grid-template-columns: 1fr;
+            box-shadow: none;
+        }
+
+        &img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            @media screen and (max-width: 780px) {
+                display: none;
+            }
+        }
+
+        &form {
+            margin: 70px auto;
+            max-width: 335px;
+            padding: 10px;
+
+            @media screen and (max-width: 780px) {
+                margin: 0 auto;
+            }
+        }
+
+        &label {
+            margin-left: 20px;
+        }
+
+        &input {
+            width: 100%;
+            padding: 13px 20px;
+            margin-top: 5px;
+            border: solid 1px #B3B3B3;
+            border-radius: 22px;
+        }
+
+        &drop {
+            border: dashed 1px #B3B3B3;
+            border-radius: 22px;
+            text-align: center;
+        }
+    }
+}
+
+.work {
+    padding: 0 10px;
+}
+
+.work .dz-button {
+    background: $cp;
+    width: 95%;
+    max-width: 235px;
+    color: white;
+    padding: 13px;
+    margin-bottom: 30px;
+    margin-top: -10px;
+    border-radius: 22px;
+}
+
+.work .dropzonetext {
+    color: #B3B3B3;
+    display: block;
+    margin-top: 25px;
+    width: 95%;
+    max-width: 237px;
+}

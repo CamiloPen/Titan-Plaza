@@ -1,0 +1,45 @@
+.service {
+    &__color {
+        background: rgb(255,116,51);
+        background: linear-gradient(180deg, rgba(255,116,51,0.9) 0%, rgba(255,151,51,1) 100%);
+        padding-bottom: 60px;
+    }
+
+    &__back {
+        background-image: url("../img/service-back.png");
+        background-repeat: no-repeat;
+        margin-top: -80px;
+        background-position: 0 80px;
+    }
+
+    &__button {
+        background: #FF9733;
+
+        &:hover {
+            background: #fcb16a;
+        }
+    }
+
+    &__boxtitle {
+        color: #FF9733;
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: -10px;
+        margin-bottom: 50px;
+    }
+
+    &__border {
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.02);
+    }
+
+    &__container {
+        max-width: 1300px;
+        font-size: 14.5px;
+        line-height: 25px;
+        margin: 0 auto;
+
+        &img {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,170 @@
+.We {
+    margin-top: 117px;
+
+    @media screen and (max-width: 1525px) {
+        margin-top: 77px;
+    }
+
+    &__image {
+        background-image: url("../img/nosotros1.png");
+        background-position: 0 25%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__color {
+        background: rgb(204,41,130);
+        background: linear-gradient(180deg, rgba(204,41,130,0.90) 10%, rgba(144,51,146,1) 100%);
+        padding: 0 15px;
+    }
+
+    &__flex {
+        display: flex;
+        max-width: 1300px;
+        margin: -50px auto;
+        padding-bottom: 70px;
+        justify-content: space-between;
+
+        @media screen and (max-width: 1054px) {
+            display: block;
+        }
+    }
+
+    &__img {
+        @media screen and (max-width: 1054px) {
+            margin: 60px auto 40px;
+            text-align: center;
+        }
+    }
+
+    &__text {
+        max-width: 590px;
+        line-height: 27px;
+        font-size: 17px;
+
+        @media screen and (max-width: 1054px) {
+            margin: 0 auto;
+        }
+    }
+
+    &__addres {
+        font-size: 15px;
+        line-height: 25px;
+
+        @media screen and (max-width: 1054px) {
+            margin: 0 auto;
+            max-width: 590px;
+        }
+    }
+
+    &__circle {
+        background: white;
+        padding: 9px;
+        border-radius: 50%;
+        font-size: 12px;
+    }
+
+    &__center {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    &__content {
+        background-image: url("../img/back-header.png");
+        background-color: white;
+        background-repeat: no-repeat;
+        margin-top: 50px;
+        padding: 0 15px 130px;
+        margin-bottom: 80px;
+
+        @media screen and (max-width: 1054px) {
+            padding: 0 15px 10px;
+        }
+
+        &img {
+            border-radius: 10px;
+            width: 100%;
+        }
+
+        &flex {
+            display: flex;
+            margin-top: 90px;
+            justify-content: space-between;
+
+            @media screen and (max-width: 1054px) {
+                display: grid;
+                max-width: 700px;
+                margin: 90px auto;
+            }
+
+            &img {
+                max-width: 950px;
+                width: 100%;
+
+                @media screen and (max-width: 1310px) {
+                    max-width: 850px;
+                }
+
+                @media screen and (max-width: 1202px) {
+                    max-width: 700px;
+                }
+            }
+        }
+
+        &title {
+            font-size: 27px;
+            color: #971F99;
+        }
+
+        &text {
+            font-size: 15px;
+            max-width: 315px;
+            line-height: 25px;
+            color: #971F99;
+
+            @media screen and (max-width: 1054px) {
+                grid-row: 1/2;
+                max-width: 700px;
+                margin-bottom: 30px;
+            }
+
+            &small {
+                font-size: 13px;
+                max-width: 315px;
+            }
+        }
+
+        &link {
+            background: #903392;
+            display: block;
+            color: white;
+            font-size: 15px;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            width: 100%;
+            max-width: 315px;
+            border-radius: 22px;
+        }
+    }
+
+    &__pad {
+        padding: 0 15px;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 1300px;
+        column-gap: 20px;
+        line-height: 25px;
+        margin: 0 auto 20px;
+
+        &row{
+            @media screen and (max-width: 830px) {
+                grid-template-columns: 1fr;
+                max-width: 600px;
+            }
+        }
+    }
+}

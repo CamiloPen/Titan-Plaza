@@ -1,0 +1,215 @@
+.shop {
+    margin-top: 117px;
+
+    @media screen and (max-width: 1525px) {
+        margin-top: 77px;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 30px;
+        margin-left: 0;
+    }
+
+    &__subtitle {
+        color: black;
+        margin-left: -15px;
+
+        &--MB {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__red {
+        margin-bottom: 20px;
+    }
+    
+    &__time{
+        margin-bottom: 50px;
+    }
+
+    &__margin {
+        margin-bottom: 60px;
+    }
+
+    &__des {
+        max-width: 550px;
+        line-height: 27px;
+    }
+}
+
+.shop__back {
+    background-image: url("../img/fondoadidas.png");
+    background-position: center;
+    background-size: cover;
+    height: 277px;
+}
+
+.shop__max {
+    width: 95%;
+    max-width: 1300px;
+    margin: auto;
+    margin-bottom: 140px;
+
+    @media screen and (max-width: 1030px) {
+        max-width: 600px;
+    }
+}
+
+.shop__start {
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 1030px) {
+        justify-content: center;
+    }
+}
+
+.shop__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 80px;
+    width: 100%;
+    position: relative;
+
+    @media screen and (max-width: 1030px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.shop__social {
+    display: flex;
+    align-items: center;
+    
+    &--justify-content-between {
+        justify-content: space-between;
+    }
+
+    &--net {
+        margin-left: 20px;
+
+        @media screen and (max-width: 520px) {
+            position: absolute;
+            right: 0;
+            top: 30px;
+        }
+    }
+
+    &--block {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        @media screen and (max-width: 1030px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media screen and (max-width: 520px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &text {
+        margin-right: 80px;
+    }
+
+    @media screen and (max-width: 1030px) {
+        justify-content: center;
+    }
+
+    @media screen and (max-width: 520px) {
+        justify-content: flex-start;
+    }
+}
+
+.shop__circle {
+    color: $csW;
+    border-radius: 50%;
+    padding: 11px;
+    margin: 0 7px;
+    font-size: 18px;
+
+    &--CV {
+        background: $cp;
+    }
+
+    &--CG {
+        background: $csG;
+        color: black;
+
+        &b {
+            font-size: 12px;
+            padding: 14px 11.43px;
+        }
+    }
+
+    &--CR {
+        background: red;
+
+        &b {
+            padding: 12px 13.8px;
+        }
+    }
+
+    &--CB {
+        background: #34519F;
+    }
+    
+    &--CLB {
+        font-size: 16px;
+        padding: 12px;
+        background: #1DA1F3;
+    }
+
+    &--small{
+        padding: 9px;
+    }
+}
+
+.shop__slideshow {
+    position: relative;
+    max-width: 550.3px;
+    margin: auto;
+
+    width: 100%;
+    overflow: hidden;
+
+    &img {
+        border-radius: 16px;
+        width: 100%;
+        display: block;
+    }
+
+    &next {
+        right: 0;
+    }
+
+    &prev, &next {
+        position: absolute;
+        top: 50%;
+        padding: 12px 15px;
+        color: $csW;
+        font-size: 10px;
+        margin: 5px;
+        background: rgba(255, 255, 255, .2);
+        transition: 0.6s ease;
+        transform: translateY(-50%);
+        border-radius: 50%;
+
+        &:hover{
+            background-color: $cp;
+        }
+    }
+}
+
+.shop__infogrid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 50px;
+    
+    @media screen and (max-width: 520px) {
+        grid-template-columns: 1fr;
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,113 @@
+<header class="head" id="head">
+    <div class="head__grid" id="grid">
+        <div>
+            <img src="assets/img/logo.png" class="head__logo">
+        </div>
+        <div class="head__flex">
+            <div class="head__time">
+                <h4 class="head__timetext">Hoy abrimos hasta las: 9pm</h4>
+                <a href="#" class="head__timelink">Ver Horarios <span class="icon-ctrl head__timecrl"></span></a>
+            </div>
+            <div class="head__phone">
+                <p><span class="head__circle icon-phone"></span>Servicio al Cliente: 5280663</p>
+            </div>
+            <div class="head__add">
+                <p><span class="head__circle icon-location"></span>Cra. 17 # 89 - 31 Bogotá, Colombia</p>
+            </div>
+            <div class="head__social">
+                <a href="#" class="head__circle icon-facebook"></a>
+                <a href="#" class="head__circle icon-twitter"></a>
+                <a href="#" class="head__circle icon-instagram"></a>
+                <a href="#" class="head__circle icon-youtube"></a>
+            </div>
+        </div>
+        <div class="head__man-se">
+                <a class="head__mantum">Mantum</a>
+                <a class="head__circle icon-search"></a>
+        </div>
+        <div class="head__menuicon">
+            <a href="#"><span class="icon-menu" onclick="myFunction()"></span>
+        </div>
+        <div class="head__menusearchback">
+            <form>
+                <input id="search" type="name" class="head__menusearch" name="Buscar" placeholder="Buscar">
+            </form>
+        </div>
+        <div class="head__menu" id="menu">
+            <div class="head__menugrid">
+                <a href="index.html" class="head__menuoption head__menucolor head__menuoption--M0"><span class="icon"></span></a>
+                <a href="nosotros.html" class="head__menuoption">Nosotos</a>
+                <div onclick="store()" class="head__menuoption head__menurela"><p class="head__menurelatext">Almacenes <span class="icon-ctrl head__menumarketarrow"></span></p>
+                    <div class="head__submenu" id="store">
+                        <a href="lista-de-almacenes.html" class="head__submenulink">Almacenes</a><br><br>
+                        <a href="mapa.html" class="head__submenulink">Mapa</a><br><br>
+                        <a href="promociones.html" class="head__submenulink">Promociones</a>
+                    </div>
+                </div>
+                <a href="cartelera.html" class="head__menuoption">Cartelera</a>
+                <div onclick="service()" class="head__menuoption head__menurela"><p class="head__menurelatext">Noticias y Eventos<span class="icon-ctrl head__menumarketarrow"></span></p>
+                    <div class="head__submenu" id="service">
+                        <a href="noticias.html" class="head__submenulink">Noticias</a><br><br>
+                        <a href="eventos.html" class="head__submenulink">Eventos</a>
+                    </div>
+                </div>
+                <a href="servicios.html" class="head__menuoption">Servicios</a>
+                <a href="factura.html" class="head__menuoption">Facturas</a>
+                <a href="contacto.html" class="head__menuoption">Contacto</a>
+                <a href="marketplace.html" class="head__menuoption head__menumarket"><img src="assets/img/sda.png" class="head__menumarketimg"><h2 class="head__menurelatext"> Marketplace <span class="icon-ctrl head__menumarketarrow"></span></h2></a>
+                <div><a id="myBtn" class="head__btn">Ingresar / Registro</a></div>
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal__pad">
+                <div class="modal__content" id="cont">
+                    <img src="assets/img/imgmodal.png" class="modal__img">
+                    <div>
+                        <div class="modal__tab">
+                            <button class="modal__tablink--BRL modal__tablink" onclick="openform(event, 'Ingresar')" id="Open">Ingresar</button>
+                            <button class="modal__tablink--BRR modal__tablink" onclick="openform(event, 'Registrarse')">Regístrarse</button>
+                        </div>
+                        <div id="Ingresar" class="modal__tabcontent">
+                            <form>
+                                <button class="modal__tabfacebook"><span class="icon-facebook modal__tabtext"></span>FACEBOOK</button>  
+                            </form>      
+                            <hr><br><br>
+                            <form class="modal__form1">
+                                <label for="Email" class="modal__formlabel">Correo Electrónico</label><br>
+                                <input type="email" id="Email" class="modal__forminput" placeholder="Ingresa tu correo electrónico"><br><br>
+                                <label for="Pass" class="modal__formlabel">Contraseña</label><br>
+                                <input type="password" id="Pass" class="modal__forminput" placeholder="Ingresa tu contraseña">
+                                <div class="modal__pass">
+                                    <a href="#"><b>¿Olvidaste tu contraseña?</b></a>
+                                </div>
+                                <input type="submit" class="modal__formsubmit" value="Iniciar sesión">
+                            </form>
+                        </div>
+                        <div id="Registrarse" class="modal__tabcontent">
+                            <form>
+                                <button class="modal__tabfacebook modal__tabfacebook--MM"><span class="icon-facebook modal__tabtext"></span>FACEBOOK</button>  
+                            </form>  
+                            <hr><br>
+                            <form class="modal__form2">
+                                <label for="name" class="modal__formlabel">Nombre</label><br>
+                                <input type="text" id="name" class="modal__forminput" placeholder="Tu Nombre"><br>
+                                <label for="lastname" class="modal__formlabel">Apellido</label><br>
+                                <input type="text" id="lastname" class="modal__forminput" placeholder="Tu Apellido"><br>
+                                <label for="email" class="modal__formlabel">Correo Electrónico</label><br>
+                                <input type="email" id="email" class="modal__forminput" placeholder="Tu correo electrónico"><br>
+                                <label for="pass" class="modal__formlabel">Contraseña</label><br>
+                                <input type="password" id="pass" class="modal__forminput" placeholder="Tu contraseña"><br>
+                                <label for="confir" class="modal__formlabel">Confirmar Contraseña</label><br>
+                                <input type="password" id="confir" class="modal__forminput" placeholder="Tu contraseña"><br><br>
+                                <div class="">
+                                    <input type="checkbox" id="form__check"><label for="form__check">Acepto <a href="#">política de tratamiento de datos</a></label>
+                                </div><br><br>
+                                <input type="submit" class="modal__formsubmit" value="ENVIAR">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

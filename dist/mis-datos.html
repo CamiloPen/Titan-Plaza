@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titan Plaza Mk</title>
+    <link rel="stylesheet" href="assets/css/stylesheet.min.css">
+</head>
+<body id="body">
+
+    <header class="head" id="head">
+    <div class="head__grid" id="grid">
+        <div>
+            <img src="assets/img/logo.png" class="head__logo">
+        </div>
+        <div class="head__flex">
+            <div class="head__time">
+                <h4 class="head__timetext">Hoy abrimos hasta las: 9pm</h4>
+                <a href="#" class="head__timelink">Ver Horarios <span class="icon-ctrl head__timecrl"></span></a>
+            </div>
+            <div class="head__phone">
+                <p><span class="head__circle icon-phone"></span>Servicio al Cliente: 5280663</p>
+            </div>
+            <div class="head__add">
+                <p><span class="head__circle icon-location"></span>Cra. 17 # 89 - 31 Bogotá, Colombia</p>
+            </div>
+            <div class="head__social">
+                <a href="#" class="head__circle icon-facebook"></a>
+                <a href="#" class="head__circle icon-twitter"></a>
+                <a href="#" class="head__circle icon-instagram"></a>
+                <a href="#" class="head__circle icon-youtube"></a>
+            </div>
+        </div>
+        <div class="head__man-se">
+                <a class="head__mantum">Mantum</a>
+                <a class="head__circle icon-search"></a>
+        </div>
+        <div class="head__menuicon">
+            <a href="#"><span class="icon-menu" onclick="myFunction()"></span>
+        </div>
+        <div class="head__menusearchback">
+            <form>
+                <input id="search" type="name" class="head__menusearch" name="Buscar" placeholder="Buscar">
+            </form>
+        </div>
+        <div class="head__menu" id="menu">
+            <div class="head__menugrid">
+                <a href="index.html" class="head__menuoption head__menucolor head__menuoption--M0"><span class="icon"></span></a>
+                <a href="nosotros.html" class="head__menuoption">Nosotos</a>
+                <div onclick="store()" class="head__menuoption head__menurela"><p class="head__menurelatext">Almacenes <span class="icon-ctrl head__menumarketarrow"></span></p>
+                    <div class="head__submenu" id="store">
+                        <a href="lista-de-almacenes.html" class="head__submenulink">Almacenes</a><br><br>
+                        <a href="mapa.html" class="head__submenulink">Mapa</a><br><br>
+                        <a href="promociones.html" class="head__submenulink">Promociones</a>
+                    </div>
+                </div>
+                <a href="cartelera.html" class="head__menuoption">Cartelera</a>
+                <div onclick="service()" class="head__menuoption head__menurela"><p class="head__menurelatext">Noticias y Eventos<span class="icon-ctrl head__menumarketarrow"></span></p>
+                    <div class="head__submenu" id="service">
+                        <a href="noticias.html" class="head__submenulink">Noticias</a><br><br>
+                        <a href="eventos.html" class="head__submenulink">Eventos</a>
+                    </div>
+                </div>
+                <a href="servicios.html" class="head__menuoption">Servicios</a>
+                <a href="factura.html" class="head__menuoption">Facturas</a>
+                <a href="contacto.html" class="head__menuoption">Contacto</a>
+                <a href="marketplace.html" class="head__menuoption head__menumarket"><img src="assets/img/sda.png" class="head__menumarketimg"><h2 class="head__menurelatext"> Marketplace <span class="icon-ctrl head__menumarketarrow"></span></h2></a>
+                <div><a id="myBtn" class="head__btn">Ingresar / Registro</a></div>
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal__pad">
+                <div class="modal__content" id="cont">
+                    <img src="assets/img/imgmodal.png" class="modal__img">
+                    <div>
+                        <div class="modal__tab">
+                            <button class="modal__tablink--BRL modal__tablink" onclick="openform(event, 'Ingresar')" id="Open">Ingresar</button>
+                            <button class="modal__tablink--BRR modal__tablink" onclick="openform(event, 'Registrarse')">Regístrarse</button>
+                        </div>
+                        <div id="Ingresar" class="modal__tabcontent">
+                            <form>
+                                <button class="modal__tabfacebook"><span class="icon-facebook modal__tabtext"></span>FACEBOOK</button>  
+                            </form>      
+                            <hr><br><br>
+                            <form class="modal__form1">
+                                <label for="Email" class="modal__formlabel">Correo Electrónico</label><br>
+                                <input type="email" id="Email" class="modal__forminput" placeholder="Ingresa tu correo electrónico"><br><br>
+                                <label for="Pass" class="modal__formlabel">Contraseña</label><br>
+                                <input type="password" id="Pass" class="modal__forminput" placeholder="Ingresa tu contraseña">
+                                <div class="modal__pass">
+                                    <a href="#"><b>¿Olvidaste tu contraseña?</b></a>
+                                </div>
+                                <input type="submit" class="modal__formsubmit" value="Iniciar sesión">
+                            </form>
+                        </div>
+                        <div id="Registrarse" class="modal__tabcontent">
+                            <form>
+                                <button class="modal__tabfacebook modal__tabfacebook--MM"><span class="icon-facebook modal__tabtext"></span>FACEBOOK</button>  
+                            </form>  
+                            <hr><br>
+                            <form class="modal__form2">
+                                <label for="name" class="modal__formlabel">Nombre</label><br>
+                                <input type="text" id="name" class="modal__forminput" placeholder="Tu Nombre"><br>
+                                <label for="lastname" class="modal__formlabel">Apellido</label><br>
+                                <input type="text" id="lastname" class="modal__forminput" placeholder="Tu Apellido"><br>
+                                <label for="email" class="modal__formlabel">Correo Electrónico</label><br>
+                                <input type="email" id="email" class="modal__forminput" placeholder="Tu correo electrónico"><br>
+                                <label for="pass" class="modal__formlabel">Contraseña</label><br>
+                                <input type="password" id="pass" class="modal__forminput" placeholder="Tu contraseña"><br>
+                                <label for="confir" class="modal__formlabel">Confirmar Contraseña</label><br>
+                                <input type="password" id="confir" class="modal__forminput" placeholder="Tu contraseña"><br><br>
+                                <div class="">
+                                    <input type="checkbox" id="form__check"><label for="form__check">Acepto <a href="#">política de tratamiento de datos</a></label>
+                                </div><br><br>
+                                <input type="submit" class="modal__formsubmit" value="ENVIAR">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div class="bill">
+            <p class="bill__title"><b>PERFIL</b></p>
+        <div class="data__grid">
+            <div class="bill__person">
+    <div class="bill__personinfo">
+        <img src="assets/img/perfil.png" class="bill__personinfoImg">
+        <div class="bill__personinfoEma">
+            <p><b>Andrea Cardozo</b></p>
+            <p class="bill__personinfoLI">andrea.c@gmail.com</p>
+        </div>
+    </div>
+    <div class="bill__personcont">
+        <div class="">
+            <p id="menu__info" onclick="menu__info()"><a href="factura.html"><b>Facturas y Puntos</b></a><span class="icon-arrow-right2 icon-arrow-right2right"></span><span class="icon-ctrl bill__personBTN"></span></p>
+        </div>
+        <div class="bill__personmenu" id="menuInfo">  
+            <a href="mis-datos.html" onclick="moda()" class="bill__personoption">Mis Datos</a><br>
+            <a href="cambiar-contraseña.html"class="bill__personoption">Cambiar Contraseña</a><br>
+            <a href="favoritos.html"class="bill__personoption">Favoritos</a><br>
+        </div>
+    </div>
+</div>
+            <div class="data__margintop">
+                <div class="data__margin">
+                    <p><b>Foto de Pefil</b></p>
+                    <div class="data__flex">
+                        <img src="assets/img/perfil-sin.png">
+                        <div class="data__flexfile">
+                            <label for="files" class="btn"><span class="icon-folder-open"></span> <b>Examinar</b></label>
+                            <input id="files" style="visibility:hidden;" type="file"  class="data__flexfilenone">
+                        </div>
+                        <p class="data__flextext">Selecciona un archivo...</p>
+                        <button class="data__flexbutton">Cargar imágen</button>
+                    </div>
+                    <p><b>Información Personal</b></p>
+                </div>
+                <form >
+                    <div class="form__grid">
+                        <div class="bill__modalbox">
+                            <label class="bill__modallab"><b>Nombre</b></label><br>
+                            <input type="text" class="bill__modalinput" placeholder="Ingresa tu nombre"><br>
+                        </div>
+                        <div>
+                            <label class="bill__modallab"><b>Apellido</b></label><br>
+                            <input type="text" class="bill__modalinput" placeholder="Ingresa tu apellido"><br>
+                        </div>
+                        <div class="bill__modalbox">
+                            <label class="bill__modallab"><b>Fecha de Nacimiento</b></label><br>
+                            <input type="date" class="bill__modalinput"><br>
+                        </div>
+                        <div>
+                            <label class="bill__modallab"><b>Genero</b></label><br>
+                            <div class="bill__modalinput">
+                                <select class="bill__modalsele">
+                                    <option value="none">Selecciona tu genero</option>
+                                    <option value="CC">Femenino</option>
+                                    <option value="CE">Masculono</option>
+                                    <option value="PS">Otro</option>
+                                </select>
+                                <span class="icon-ctrl spanarrow"></span>
+                            </div><br>
+                        </div>
+                        <div>
+                            <label class="bill__modallab"><b>Estado Civil</b></label><br>
+                            <div class="bill__modalinput">
+                                <select class="bill__modalsele">
+                                    <option value="none">Selecciona tu estado civil</option>
+                                    <option value="CC">Soltero</option>
+                                    <option value="CE">Casado</option>
+                                    <option value="PS">Divorciado</option>
+                                </select>
+                                <span class="icon-ctrl spanarrow"></span>
+                            </div><br>
+                        </div>
+                        <div>
+                            <label class="bill__modallab"><b>Correo Electrónico</b></label><br>
+                            <input type="email" class="bill__modalinput" placeholder="Ingresa tu correo electrónico"><br>
+                        </div>
+                        <div>
+                            <label class="bill__modallab"><b>Tipo de Documento</b></label><br>
+                            <div class="bill__modalinput">
+                                <select id="Doc" class="bill__modalsele">
+                                    <option value="none">Seleccione Tipo de Documento</option>
+                                    <option value="CC">Cédula de Ciudadania</option>
+                                    <option value="CE">Cédula de Extrangería</option>
+                                    <option value="PS">Pasaporte</option>
+                                </select>
+                                <span class="icon-ctrl spanarrow"></span>
+                            </div><br>
+                        </div>
+                        <div>
+                            <label class="bill__modallab"><b>Número de Documento</b></label><br>
+                            <input type="number" min="1" class="bill__modalinput" placeholder="Ingresa tu número de documento"><br>
+                        </div>
+                        <div>
+                            <label class="bill__modallab" for="Dep"><b>Departamento</b></label><br>
+                            <div  class="bill__modalinput">
+                                <select id="Dep"  class="bill__modalsele">
+                                    <option value="none">Seleccione tu departamento</option>
+                                    <option value="Ant">Antioquía</option>
+                                    <option value="Atla">Atlántico</option>
+                                    <option value="Boy">Boyacá</option>
+                                    <option value="Cundi">Cundinamarca</option>
+                                </select>
+                                <span class="icon-ctrl spanarrow"></span>
+                            </div><br>
+                        </div>
+                        <div>
+                            <label class="bill__modallab" for="Ciu"><b>Ciudad</b></label><br>
+                            <div class="bill__modalinput">
+                                <select id="Ciu"  class="bill__modalsele">
+                                    <option value="none">Seleccione tu ciudad</option>
+                                    <option value="Med">Medellín</option>
+                                    <option value="Barra">Barranquilla</option>
+                                    <option value="Tun">Tunja</option>
+                                    <option value="Bogo">Bogotá</option>
+                                </select>
+                                <span class="icon-ctrl spanarrow"></span>
+                            </div>
+                        </div>
+                        <div class="bill__modalbox">
+                            <label class="bill__modallab"><b>Dirección</b></label><br>
+                            <input type="text" class="bill__modalinput" placeholder="Ingresa tu dirección"><br>
+                        </div>
+                    </div>
+                    <p class="data__margin"><b>Otra Información</b></p>
+                    <div class="form__grid">
+                        <div>
+                            <label class="bill__modallab"><b>Número de Hijos</b></label><br>
+                            <div class="bill__modalinput">
+                                <select id="Doc" class="bill__modalsele">
+                                    <option value="none">Selecciona tu número de hijos</option>
+                                    <option value="CC">1</option>
+                                    <option value="CE">2</option>
+                                    <option value="PS">3 o Más</option>
+                                </select>
+                                <span class="icon-ctrl spanarrow"></span>
+                            </div><br>
+                        </div>
+                        <div>
+                            <label class="bill__modallab"><b>Medio de Transporte</b></label><br>
+                            <div class="bill__modalinput">
+                                <select id="Doc" class="bill__modalsele">
+                                    <option value="none">Selecciona tu medio de transporte</option>
+                                    <option value="CC">Automóvil</option>
+                                    <option value="CE">Bicicleta</option>
+                                    <option value="PS">Motocicleta</option>
+                                </select>
+                                <span class="icon-ctrl spanarrow"></span>
+                            </div><br>
+                        </div>
+                    </div>
+                    <p  class="data__margin"><b>Intereses</b></p>
+                    <div class="form__grill data__margin"">
+                        <label class="data__checkbox" for="food">Comida</label>
+                        <input id="food" type="checkbox">
+                        <label class="data__checkbox" for="tec">Tecnología</label>
+                        <input id="tec" type="checkbox">
+                        <label class="data__checkbox" for="sport">Deporte</label>
+                        <input id="sport" type="checkbox">
+                        <label class="data__checkbox" for="cine">Cine</label>
+                        <input id="cine" type="checkbox">
+                        <label class="data__checkbox" for="game">Juegos</label>
+                        <input id="game" type="checkbox">
+                        <label class="data__checkbox" for="book">Literatura y Arte</label>
+                        <input id="book" type="checkbox">
+                    </div>
+                    <div  class="form__center">
+                        <button type="submit" class="bill__modalsubmit">Guardar Cambios</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+    <div class="body__back"></div>
+
+    <div class="foot">
+        <div class="foot__max">
+            <img src="assets/img/logo_blanco.png" class="foot__logo">
+            <div class="foot__grid">
+                <div>
+                    <p class="foot__info">Cra. 17 # 89 - 31 <br><br>
+                        Bogotá, Colombia
+                        <br><br>
+                        info@centrocomercial.com
+                        <br><br>
+                        (1) 5280663</p>
+                </div>
+                <div class="foot__redes">
+                    <h4 class="foot__text--color1">Síguenos</h4><br>
+                    <a href="#" class="foot__socialcircle icon-facebook"></a>
+                    <a href="#" class="foot__socialcircle icon-twitter"></a>
+                    <a href="#" class="foot__socialcircle icon-instagram"></a>
+                    <a href="#" class="foot__socialcircle icon-youtube"></a>
+                </div>
+                <div class="foot__company">
+                    <h4 class="foot__text--color1">Compañía</h4><br>
+                    <ul>
+                        <li><a href="lista-de-almacenes.html" class="foot__text--color2">Tiendas</a></li> <br>
+                        <li><a href="facturas.html" class="foot__text--color2">Facturas</a></li><br>
+                        <li><a href="contacto.html" class="foot__text--color2">Contáctenos</a></li>
+                    </ul>
+                </div>
+                <div class="foot__news">
+                    <h4 class="foot__text--color1">Recibe las Últimas Noticias del Centro Comercial</h4>
+                    <div class="foot__email">
+                    <form action="">
+                        <input type="email" class="foot__newsemail" name="correo" placeholder="Correo electrónico"><button type="submit" class="icon-ctrl foot__button"></button>
+                    </form>
+                    </div>
+                </div>
+                <div class="foot__servicio">
+                    <p class="foot__copy foot__text--color1">Centro Comercial © 2020 / Todos los derechos reservados</p>
+                    <div class="foot__serviciotext">
+                        <h4 class=" foot__text--color1">Un servicio de:</h4>
+                        <img src="assets/img/codelabs.png" class="foot__servicioimg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer> 
+
+    <script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/slick.js"></script>
+<script src="assets/js/dropzone.min.js"></script>
+<script src="assets/js/main.min.js"></script>
+    
+</body>
+</html>

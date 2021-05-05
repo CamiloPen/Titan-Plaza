@@ -1,0 +1,147 @@
+#map {
+    width: 100%;
+    height: 100%;
+    min-height: 800px;
+    object-fit: cover;
+}
+
+.Map {
+    margin-top: 117px;
+
+    @media screen and (max-width: 1525px) {
+        margin-top: 77px;
+    }
+
+    &__grid {
+        position: absolute;
+        top: 127px;
+        left: 10px;
+        right: 10px;
+        background: white;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: 1525px) {
+            top: 87px;
+        }
+
+        @media screen and (max-width: 885px) {
+            padding: 60px 0 30px 30px;
+        }
+    }
+
+    &__title {
+        position: relative;
+
+        @media screen and (max-width: 885px) {
+            position: unset;
+        }
+
+        &text {
+            position: absolute;
+            font-size: 27px;
+            color: white;
+            margin: auto;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+
+            @media screen and (max-width: 885px) {
+                font-size: 21px;
+                color: $cp;
+                top: 30px;
+            }
+        }
+
+        &img {
+            height: 100%;
+
+            @media screen and (max-width: 885px) {
+                display: none;
+            }
+        }
+    }
+
+    &__search {
+        width: 90%;
+        margin: auto;
+        max-width: 710px;
+        position: relative;
+
+        &input {
+            background: #fafafa;
+            width: 100%;
+            padding: 13px;
+            padding-left: 25px;
+            border-radius: 22px;
+        }
+
+        &button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            right: 15px;
+        }
+    }
+
+    &__store {
+        width: 100%;
+        max-width: 330px;
+        margin-right: 30px;
+        position: relative;
+
+        @media screen and (max-width: 550px) {
+            max-width: 100px;
+            margin-right: 0;
+        }
+
+        &button {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: $cp;
+            border-radius: 22px;
+            width: 100%;
+            color: white;
+            padding: 13px 25px;
+
+            @media screen and (max-width: 550px) {
+                border-radius: 50%;
+                padding: 13px;
+                width: auto;
+                margin: auto;
+            }
+        }
+
+        &text {
+            @media screen and (max-width: 550px) {
+                display: none;
+            }
+        }
+
+        &menu {
+            display: none;
+            background: white;
+            position: absolute;
+            text-align: left;
+            width: 100%;
+            min-width: 249px;
+            font-size: 15px;
+            line-height: 5px;
+            border-radius: 10px;
+            padding: 20px 30px;
+            top: 85px;
+            right: 0;
+
+            @media screen and (max-width: 550px) {
+                right: 28.5px;
+            }
+        }
+    }
+
+    &__foot {
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('../partials/head') %>
+<body id="body">
+
+    <%- include('../layout/header') %>
+
+    <div class="bill">
+            <p class="bill__title"><b>PERFIL</b></p>
+        <div class="data__grid">
+            <%- include('../components/perfil') %>
+            <div class="data__margintop">
+                <div class="data__margin">
+                    <p><b>Foto de Pefil</b></p>
+                    <div class="data__flex">
+                        <img src="assets/img/perfil-sin.png">
+                        <div class="data__flexfile">
+                            <label for="files" class="btn"><span class="icon-folder-open"></span> <b>Examinar</b></label>
+                            <input id="files" style="visibility:hidden;" type="file"  class="data__flexfilenone">
+                        </div>
+                        <p class="data__flextext">Selecciona un archivo...</p>
+                        <button class="data__flexbutton">Cargar imágen</button>
+                    </div>
+                    <p><b>Información Personal</b></p>
+                </div>
+                <form >
+                    <div class="form__grid">
+                        <div class="bill__modalbox">
+                            <label class="bill__modallab"><b>Nombre</b></label><br>
+                            <input type="text" class="bill__modalinput" placeholder="Ingresa tu nombre"><br>
+                        </div>
+                        <div>
+                            <label class="bill__modallab"><b>Apellido</b></label><br>
+                            <input type="text" class="bill__modalinput" placeholder="Ingresa tu apellido"><br>
+                        </div>
+                        <div class="bill__modalbox">
+                            <label class="bill__modallab"><b>Fecha de Nacimiento</b></label><br>
+                            <input type="date" class="bill__modalinput"><br>
+                        </div>
+                        <div>
+                            <label class="bill__modallab"><b>Genero</b></label><br>
+                            <div class="bill__modalinput">
+                                <select class="bill__modalsele">
+                                    <option value="none">Selecciona tu genero</option>
+                                    <option value="CC">Femenino</option>
+                                    <option value="CE">Masculono</option>
+                                    <option value="PS">Otro</option>
+                                </select>
+                                <span class="icon-ctrl spanarrow"></span>
+                            </div><br>
+                        </div>
+                        <div>
+                            <label class="bill__modallab"><b>Estado Civil</b></label><br>
+                            <div class="bill__modalinput">
+                                <select class="bill__modalsele">
+                                    <option value="none">Selecciona tu estado civil</option>
+                                    <option value="CC">Soltero</option>
+                                    <option value="CE">Casado</option>
+                                    <option value="PS">Divorciado</option>
+                                </select>
+                                <span class="icon-ctrl spanarrow"></span>
+                            </div><br>
+                        </div>
+                        <div>
+                            <label class="bill__modallab"><b>Correo Electrónico</b></label><br>
+                            <input type="email" class="bill__modalinput" placeholder="Ingresa tu correo electrónico"><br>
+                        </div>
+                        <div>
+                            <label class="bill__modallab"><b>Tipo de Documento</b></label><br>
+                            <div class="bill__modalinput">
+                                <select id="Doc" class="bill__modalsele">
+                                    <option value="none">Seleccione Tipo de Documento</option>
+                                    <option value="CC">Cédula de Ciudadania</option>
+                                    <option value="CE">Cédula de Extrangería</option>
+                                    <option value="PS">Pasaporte</option>
+                                </select>
+                                <span class="icon-ctrl spanarrow"></span>
+                            </div><br>
+                        </div>
+                        <div>
+                            <label class="bill__modallab"><b>Número de Documento</b></label><br>
+                            <input type="number" min="1" class="bill__modalinput" placeholder="Ingresa tu número de documento"><br>
+                        </div>
+                        <div>
+                            <label class="bill__modallab" for="Dep"><b>Departamento</b></label><br>
+                            <div  class="bill__modalinput">
+                                <select id="Dep"  class="bill__modalsele">
+                                    <option value="none">Seleccione tu departamento</option>
+                                    <option value="Ant">Antioquía</option>
+                                    <option value="Atla">Atlántico</option>
+                                    <option value="Boy">Boyacá</option>
+                                    <option value="Cundi">Cundinamarca</option>
+                                </select>
+                                <span class="icon-ctrl spanarrow"></span>
+                            </div><br>
+                        </div>
+                        <div>
+                            <label class="bill__modallab" for="Ciu"><b>Ciudad</b></label><br>
+                            <div class="bill__modalinput">
+                                <select id="Ciu"  class="bill__modalsele">
+                                    <option value="none">Seleccione tu ciudad</option>
+                                    <option value="Med">Medellín</option>
+                                    <option value="Barra">Barranquilla</option>
+                                    <option value="Tun">Tunja</option>
+                                    <option value="Bogo">Bogotá</option>
+                                </select>
+                                <span class="icon-ctrl spanarrow"></span>
+                            </div>
+                        </div>
+                        <div class="bill__modalbox">
+                            <label class="bill__modallab"><b>Dirección</b></label><br>
+                            <input type="text" class="bill__modalinput" placeholder="Ingresa tu dirección"><br>
+                        </div>
+                    </div>
+                    <p class="data__margin"><b>Otra Información</b></p>
+                    <div class="form__grid">
+                        <div>
+                            <label class="bill__modallab"><b>Número de Hijos</b></label><br>
+                            <div class="bill__modalinput">
+                                <select id="Doc" class="bill__modalsele">
+                                    <option value="none">Selecciona tu número de hijos</option>
+                                    <option value="CC">1</option>
+                                    <option value="CE">2</option>
+                                    <option value="PS">3 o Más</option>
+                                </select>
+                                <span class="icon-ctrl spanarrow"></span>
+                            </div><br>
+                        </div>
+                        <div>
+                            <label class="bill__modallab"><b>Medio de Transporte</b></label><br>
+                            <div class="bill__modalinput">
+                                <select id="Doc" class="bill__modalsele">
+                                    <option value="none">Selecciona tu medio de transporte</option>
+                                    <option value="CC">Automóvil</option>
+                                    <option value="CE">Bicicleta</option>
+                                    <option value="PS">Motocicleta</option>
+                                </select>
+                                <span class="icon-ctrl spanarrow"></span>
+                            </div><br>
+                        </div>
+                    </div>
+                    <p  class="data__margin"><b>Intereses</b></p>
+                    <div class="form__grill data__margin"">
+                        <label class="data__checkbox" for="food">Comida</label>
+                        <input id="food" type="checkbox">
+                        <label class="data__checkbox" for="tec">Tecnología</label>
+                        <input id="tec" type="checkbox">
+                        <label class="data__checkbox" for="sport">Deporte</label>
+                        <input id="sport" type="checkbox">
+                        <label class="data__checkbox" for="cine">Cine</label>
+                        <input id="cine" type="checkbox">
+                        <label class="data__checkbox" for="game">Juegos</label>
+                        <input id="game" type="checkbox">
+                        <label class="data__checkbox" for="book">Literatura y Arte</label>
+                        <input id="book" type="checkbox">
+                    </div>
+                    <div  class="form__center">
+                        <button type="submit" class="bill__modalsubmit">Guardar Cambios</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <%- include('../layout/footer') %> 
+
+    <%- include('../partials/scripts') %>
+    
+</body>
+</html>

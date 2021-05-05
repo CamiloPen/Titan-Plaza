@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('../partials/head') %>
+<body id="body">
+
+    <%- include('../layout/header') %>
+
+    <div class="cinema">
+        <div class="We__image">
+            <div class="event__color">
+                <p class="cinema__title">EVENTOS</p>
+            </div>
+        </div>
+        <div class="event__back">
+            <div class="cinema__margin">
+                <div class="event__head">
+                    <img src="assets/img/event-head.png" class="cinema__headmovietopimg cinema__headmovietop">
+                    <div class="News__headtop">
+                        <p class="home__flex--colorWhite"><span class="News__headtopbig">04</span><br>Mayo</p>
+                    </div>
+                    <img src="assets/img/evento1.png" class="event__headimg">
+                    <div class="event__headmargin">
+                        <p class="home__flex--colorGreen cinema__titlejust"><b>Stand-up Comedy Nigth con Ricardo Quevedo</b></p>
+                        <p>Los mejores comediantes del mundo siempre disponen de una noche para presentar un show especial...</p>
+                        <a href="evento-sonria.html" class="home__flex--colorWhite News__button News__buttongreen">Ver Eventos</a>
+                        <br><br><br>
+                    </div>
+                </div>
+    
+                <div class="event__grid">
+                    <p class="home__flex--colorGreen event__title">SEPTIEMBRE</p>
+                    <%- include('../components/eventos') %>
+                    <p class="home__flex--colorGreen event__title">OCTUBRE</p>
+                    <%- include('../components/eventos') %>
+                    <a href="" class="cinema__button cinema__headmoviebutton News__buttongreen"><b>Cargar Más</b></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('../layout/footer') %> 
+
+    <%- include('../partials/scripts') %>
+    
+</body>
+</html>

@@ -1,0 +1,227 @@
+.store {
+    margin-top: 117px;
+    padding-bottom: 80px;
+    text-align: center;
+    background-image: url("../img/fondo.png");
+    background-repeat: no-repeat;
+    background-color: #FAFAFA;
+
+    @media screen and (max-width: 1525px) {
+        margin-top: 77px;
+    }
+
+    &__title {
+        padding: 70px;
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 21px;
+        font-weight: bold;
+
+        @media screen and (max-width: 1000px) {
+            padding: 30px;
+        }
+
+        &--center {
+            padding-top: 20px;
+        }
+    }
+
+    &__linea {
+        width: 100%;
+        margin-left: -30px;
+    }
+    
+    &__searchbutton {
+        background: none;
+        margin-left: -40px;
+    }
+
+    &__check {
+        line-height: 30px;
+    }
+    
+    &__check:hover {
+        color: $cp;
+        border: solid 1px $csW;
+    }
+    
+    &__check.checked::before {
+        background: $cp;
+        color: $cp;
+        box-shadow: inset 0px 0px 1px 1px #ebebeb;
+    }
+    
+    &__img {
+        width: 100%;
+    }
+    
+    &__text {
+        &Back {
+            &:hover {
+                background: $cp;
+                margin-top: -7px;
+                padding: 14px;
+                margin-bottom: 0;
+                color: white;
+                border-radius: 0 0 10px 10px;
+            }
+        }
+
+        font-weight: bold;
+        color: $cp;
+    }
+
+    &__more {
+        font-size: 15px;
+        color: $csW;
+        background: $cp;
+        grid-column: 1/-1;
+        margin: auto;
+        width: 100%;
+        max-width: 340px;
+        padding: 14px;
+        border-radius: 22px;
+        margin-top: 30px;
+        font-weight: bold;
+        margin-bottom: 80px;
+    }
+}
+
+.store__center {
+    position: relative;
+    display: flex;
+    margin: auto;
+    max-width: 1300px;
+    text-align: center;
+}
+
+.store__search {
+    text-align: right;
+    max-width: 1300px;
+    margin: auto;
+    padding-right: 20px;
+}
+
+.store__searchtext {
+    border-radius: 21px;
+    padding: 7px 20px;
+    width: 95%;
+    max-width: 270px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.02);
+}
+
+.store__menu {
+
+    &filtro {
+        display: none;
+        font-weight: bold;
+        color: $csW;
+        width: 95%;
+        padding: 16px ;
+        max-width: 300px;
+        background: $cp;
+        margin: auto;
+        margin-bottom: 15px;
+        border-radius: 10px;
+    }
+
+    &Arrow {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+
+.store__grid {
+    display: grid;
+    padding-top: 40px;
+    max-width: 1300px;
+    margin: auto;
+    grid-template-columns: 1.2fr 4fr;
+    column-gap: 20px;
+
+    @media screen and (max-width: 1080px) {
+        grid-template-columns: 1fr 2fr;
+        column-gap: 10px;
+    }
+}
+
+.store__filtros {
+    background: $csW;
+    border-radius: 15px;
+    font-size: 15px;
+    text-align: left;
+    position: relative;
+    padding-left: 45px;
+    margin-bottom: 30px;
+    max-height: 820px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.02);
+
+    &--BK {
+        margin-left: -20px;
+    font-size: 15px;
+    }
+}
+
+.store__check::before {
+    content: "";
+    height: 8px;
+    width: 8px;
+    border: solid 0.5px;
+    border-radius: 15px;
+    position: absolute;
+    margin-top: 12px;
+    left: 25px;
+}
+
+.store__column {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+
+    @media screen and (max-width: 1080px) {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+    }
+
+    @media screen and (max-width: 540px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.store__boxs {
+    position: relative;
+    justify-self: center;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    font-size: 15px;
+    width: 97%;
+    height: 90%;
+    background-color: $csW;
+    max-width: 300px;
+    text-align: left;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.02);
+
+    &favo {
+        max-height: 330px;
+
+        @media screen and (max-width: 1080px) {
+            max-height: none;
+        }
+    }
+
+    &ML {
+        padding: 0 15px;
+    }
+}
+
+.store__boxheart {
+    position: absolute;
+    color: $csG;
+    background: none;
+    top: 66%;
+    right: 6px;
+
+    &:hover, &:active, &favo {
+        color: red;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('../partials/head') %>
+<body id="body">
+    
+    <%- include('../layout/header') %>
+
+    <div class="contact">
+        <div class="cinema__margin">
+            <div class="contact__grid contact__max contact__border">
+                <div>
+                    <p class="We__contenttitle">CONTACTANOS</p>
+                    <p class="contact__textsmall">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
+                <div>
+                    <p class="contact__textsmall"><b>Av. Boyacá # 80 - 94 <br>
+                        Bogotá, Colombia <br><br>
+                        servicioalcliente@titanplaza.com <br><br>
+                        319 450 2885</b> </p>
+                </div>
+            </div>
+            <form class="contact__grid contact__max">
+                <div>
+                    <label for="" class="contact__lab">Nombre y Apellido</label><br>
+                    <input type="text" placeholder="Ingresa tu nombre completo" class="contact__input contact__inputname">
+                </div>
+                <div>
+                    <label for="" class="contact__lab">Correo Electrónico</label>
+                    <input type="email" placeholder="Ingresa tu correo electrónico" class="contact__input">   
+                </div>
+                <div class="contact__area">
+                    <label for="" class="contact__lab">Mensaje</label>
+                    <textarea placeholder="Escríbenos un mensaje" rows="8" class="contact__input"></textarea>
+                </div>
+                <div class="contact__term">
+                    <input type="checkbox" class="contact__check"><label>Acepto los <a href="">Términos y Condiciones</a></label>
+                </div>
+                <button type="submit" class="contact__input contact__inputbutton">Enviar</button>
+            </form>
+        </div>
+        <div class="contact__map">
+            <iframe class="contact__back" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9459.295485593475!2d-74.08862551133285!3d4.568160124850369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1616789333655!5m2!1ses-419!2sco" width="100%" height="100%" style="border:0; z-index: -2;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="body__back contact__foot"></div>
+    </div>
+    
+    
+    <%- include('../layout/footer') %> 
+
+    <%- include('../partials/scripts') %>
+    
+</body>
+</html>

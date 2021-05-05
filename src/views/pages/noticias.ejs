@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('../partials/head') %>
+<body id="body">
+
+    <%- include('../layout/header') %>
+
+    <div class="cinema">
+        <div class="We__image">
+            <div class="News__color">
+                <p class="cinema__title">NOTICIAS</p>
+            </div>
+        </div>
+        <div class="News__back">
+
+            <div class="cinema__margin">
+                <div class="News__head">
+                    <img src="assets/img/news-head.png" class="cinema__headmovietopimg cinema__headmovietop">
+                    <div class="News__headtop">
+                        <p class="home__flex--colorBlue"><span class="News__headtopbig">04</span><br>Mayo</p><br><br>
+                    </div>
+                    <div class="News__headmax">
+                        <p class="home__flex--colorBlue News__title"><b>Hoy se Estrena la Nueva Película de Deadpool</b></p>
+                        <p class="home__flex--colorWhite">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...</p>
+                        <a href="noticia-pool.html" class="home__flex--colorBlue News__button">Ver Noticia</a>
+                    </div>
+                </div>
+                
+                <div class="cinema__content">
+                    <h2 class="home__flextitle home__flex--colorBlue">NOTICIAS RECIENTES</h2><br>
+                    <div class="cinema__grid">
+                        <%- include('../components/noticias') %>
+                        <%- include('../components/noticias') %> 
+                        <%- include('../components/noticias') %>
+                        <a href="" class="cinema__button cinema__headmoviebutton News__buttonback"><b>Cargar Más</b></a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <%- include('../layout/footer') %> 
+
+    <%- include('../partials/scripts') %>
+    
+</body>
+</html>

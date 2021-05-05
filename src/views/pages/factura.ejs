@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('../partials/head') %>
+<body id="body" class="stop">
+    <%- include('../components/modalpoint') %>
+    
+    <%- include('../components/imgenmodal') %> 
+    <%- include('../layout/header') %>
+
+    <div class="bill">
+            <p class="bill__title"><b>PERFIL</b></p>
+        <div class="bill__grid">
+            <%- include('../components/perfil') %>
+            <div>
+                <div id="dot" class="bill__dots">
+                    <p class="bill__dotstext"><b class="bill__dotstext--BO">¡Bienvenido al centro de puntos y beneficios de Titán Plaza!</b><br><br><span class="bill__dotstext--SPA">Por ser cliente nuevo recibes <b>1.000 puntos</b> de<br>manera automática</span></p>
+                    <span onclick="Close6()" class="close">&times;</span>
+                </div>
+                <div class="bill__card">
+                    <div class="bill__cardback">
+                        <div>
+                            <p class="bill__cardName"><b>Andrea Cardozo</b></p><p class="bill__cardPoints"><b> 2.769 pts.</b></p>
+                            <div class="bill__cardFlex">
+                                <p class="bill__cardText"><span class="bill__cardLight">Puntos a Vencer</span><br><br>200 pts.</p>
+                                <p class="bill__cardText"><span class="bill__cardLight">Fecha de Vencimiento</span><br><br>29/07/20</p>
+                            </div>
+                        </div>
+                        <div class="bill__cardPict">
+                            <button id="BtnIMG" onclick="addimg()" class="bill__cardBtn"><span class="icon-camera">   </span>Agregar Factura</button><br><br>
+                            <a href="mis-facturas.html"><button class="bill__cardBtn bill__cardBtnLI">Mis Facturas<span class="icon-ctrl bill__cardBtnRO"></span></button></a>
+                        </div>
+                        <div class="bill__cardNum">
+                            <p class="bill__cardText"><span class="bill__cardLight">Numero CMR</span><br><br>1120980260</p>
+                            <img src="assets/img/logo_blanco.png" class="bill__cardImg">
+                        </div>
+                    </div>
+                </div>
+                <div class="bill__motor">
+                    <p class="bill__subtitle"><b>Campañas</b></p>
+                    <div class="bill__motorgrid">
+                        <a href="campaña.html" class="bill__motorbox">
+                            <img src="assets/img/carro.png" class="bill__motorimg">
+                            <p class="bill__motortext"><b>Rifa Carro</b></p>
+                        </a>
+                        <a href="campaña.html" class="bill__motorbox">
+                            <img src="assets/img/carro.png" class="bill__motorimg">
+                            <p class="bill__motortext"><b>Rifa Carro</b></p>
+                        </a>
+                        <a href="campaña.html" class="bill__motorbox">
+                            <img src="assets/img/carro.png" class="bill__motorimg">
+                            <p class="bill__motortext"><b>Rifa Carro</b></p>
+                        </a>
+                        <a href="campaña.html" class="bill__motorbox">
+                            <img src="assets/img/carro.png" class="bill__motorimg">
+                            <p class="bill__motortext"><b>Rifa Carro</b></p>
+                        </a>
+                        <a href="campaña.html" class="bill__motorbox">
+                            <img src="assets/img/carro.png" class="bill__motorimg">
+                            <p class="bill__motortext"><b>Rifa Carro</b></p>
+                        </a>
+                        <a href="campaña.html" class="bill__motorbox">
+                            <img src="assets/img/carro.png" class="bill__motorimg">
+                            <p class="bill__motortext"><b>Rifa Carro</b></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="bill__phone">
+                    <p class="bill__subtitle bill__phoneFlex"><b>Catálogo</b><a href="catalogo.html" class="bill__phoneBtn">Todo el Catálogo <span class="icon-ctrl bill__phoneCrl"></span></a></p>
+                    <div class="bill__slideshow">
+                        <div class="bill__phonecontent">
+                            <%- include('../components/celular') %>
+                            <%- include('../components/celular') %>
+                            <%- include('../components/celular') %>
+                            <%- include('../components/celular') %>
+                            <%- include('../components/celular') %>
+                            <%- include('../components/celular') %>
+                            <%- include('../components/celular') %>
+                            <%- include('../components/celular') %>
+                            <%- include('../components/celular') %>
+                            <%- include('../components/celular') %>
+                            <%- include('../components/celular') %>
+                            <%- include('../components/celular') %>
+                        </div>
+                        <a class="bill__phoneprev">&#10094;</a>
+                        <a class="bill__phonenext">&#10095;</a>
+                    </div>
+                </div>
+                <div class="bill__info">
+                    <p class="bill__infotext"><span class="bill__infocircle">i</span>Para redimir un producto, acércate con tu cédula a la administración del centro comercial</p><br>
+                    <p class="bill__infotext"><span class="bill__infocircle">i</span>Las facturas usadas en una campaña no podrán ser usadas nuevamente.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('../layout/footer') %> 
+
+    <%- include('../partials/scripts') %>
+    
+</body>
+</html>

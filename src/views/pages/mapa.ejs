@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('../partials/head') %>
+<body id="body">
+
+    <%- include('../layout/header') %>
+
+    <div class="Map">
+        <div class="Map__grid">
+            <div></div>
+            <div class="Map__title">
+                <p class="Map__titletext">MAPA</p>
+                <img class="Map__titleimg" src="assets/img/Mapa-back.png">
+            </div>
+            <div class="Map__search">
+                <form>
+                    <input type="name" class="Map__searchinput" name="Buscar" placeholder="Buscar almacen">
+                    <button class="icon-search Map__searchbutton" type="submit"></button>
+                </form>
+            </div>
+            <div class="Map__store">
+                <button class="Map__storebutton" onclick="map()">
+                    <span class="Map__storetext">Directorio de Tiendas</span><img src="assets/img/tienda.png">
+                    <div id="menu-map" class="Map__storemenu">
+                        <p class="home__flex--colorVi">Categoría</p><br>
+                        <p>Tienda - Local 1-84</p>
+                        <p>Tienda - Local 1-84</p>
+                        <p>Tienda - Local 1-84</p>
+                        <p>Tienda - Local 1-84</p>
+                        <p>Tienda - Local 1-84</p>
+                        <br>
+                        <p class="home__flex--colorVi">Categoría</p><br>
+                        <p>Tienda - Local 1-84</p>
+                        <p>Tienda - Local 1-84</p>
+                        <p>Tienda - Local 1-84</p>
+                        <p>Tienda - Local 1-84</p>
+                        <p>Tienda - Local 1-84</p> 
+                        <br>
+                        <p class="home__flex--colorVi">Categoría</p><br>
+                        <p>Tienda - Local 1-84</p>
+                        <p>Tienda - Local 1-84</p>
+                        <p>Tienda - Local 1-84</p>
+                        <p>Tienda - Local 1-84</p>
+                        <p>Tienda - Local 1-84</p>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <img id="map" src="assets/img/Mapa.jpg">
+    </div>
+    <div class="foot">
+        <div class="foot__max">
+            <div class="foot__servicio Map__foot">
+                <p class="foot__copy foot__text--color1">Centro Comercial © 2020 / Todos los derechos reservados</p>
+                <div class="foot__serviciotext">
+                    <h4 class=" foot__text--color1">Un servicio de:</h4>
+                    <img src="assets/img/codelabs.png" class="foot__servicioimg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('../partials/scripts') %>
+
+</body>
+</html>

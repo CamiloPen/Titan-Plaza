@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('../partials/head') %>
+<body id="body">
+
+    <%- include('../layout/header') %>
+
+    <div class="cinema">
+        <div class="prom__back">
+            <div class="cinema__margin">
+                <div class="cinema__redes">
+                    <a href="promociones.html" class="cinema__redeslink prom__title"><span class="icon-ctrl cinema__redesarrow"></span>Volver</a>
+                    <div>
+                        <p class="cinema__redes--color">Compartir: <span class="icon-facebook cinema__redesmargin home__flex--colorRed"></span> <span class="icon-twitter home__flex--colorRed cinema__redesmargin"></span></p>
+                    </div>
+                </div>
+        
+                <div class="prom__grid">
+                    <img src="assets/img/promo.png" class="prom__gridimg">
+                    <div>
+                        <p class="home__flex--colorRed  prom__titlesize"><b>Adidas Brand Sale. Todos los productos al -50%</b></p>
+                        <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="bill__maxcompacale">
+                            <img src="assets/img/calendario.png" class="bill__maxcompacaleimg">
+                            <p class="bill__maxcontmargin"><b>Válido hasta</b><br>26 de Junio, 2018</p>
+                        </div>
+                        <div class="">
+                            <p class="prom__gridtext">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cinema__margin">
+            <div class="cinema__grid prom__margin">
+                <p class="home__flex--colorRed prom__margintext">Otras Promociones</p>
+                <%- include('../components/promo') %>
+            </div>
+        </div>
+        
+    </div>
+
+<%- include('../layout/footer') %> 
+
+<%- include('../partials/scripts') %>
+
+</body>
+</html>

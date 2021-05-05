@@ -1,0 +1,240 @@
+.head {
+    width: 100%;
+    margin-top: -117px;
+    font-weight: normal;
+    background: white;
+    position: fixed;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 00.04);
+    z-index: 3;
+
+    &__social {
+        justify-self: center;
+    }
+
+    &__grid {
+        font-size: 13px;
+        display: grid;
+        grid-template-columns: 1fr 6fr 1fr 0;
+        align-items: center;
+        padding: 10px 0;
+
+        @media screen and (max-width: 1525px) {
+            grid-template-columns: 1fr 6fr 0.5fr 0;
+        }
+    }
+
+    &__flex {
+        display: flex;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1100px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__time {
+        justify-self: right;
+
+        &link {
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        &crl {
+            position: absolute;
+            margin-left: 5px;
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+    }
+
+    &__phone {
+        justify-self: center;
+    }
+
+    &__man-se {
+        justify-self: right;
+        margin-right: 20px;
+    }
+
+    &__textmargin {
+        margin-right: 10px;
+    }
+
+    &__time, &__mantum {
+        background: #F5F5F5;
+        border-radius: 15px;
+        padding: 5px 20px;
+    }
+
+    &__mantum {
+        padding: 5px 30px;
+        font-weight: bold;
+    }
+}
+
+.head__logo {
+    width: 100%;
+    max-width: 140px;
+    margin-left: 15px;
+    position: absolute;
+}
+
+.head__circle {
+    background: #F5F5F5;
+    color: $cp;
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.head__timetext {
+    display: inline;
+    margin-right: 10px;
+}
+
+.head__submenu {
+    display: none;
+    position: absolute;
+    left: -23px;
+    top: 55px;
+    padding: 20px 40px 40px 20px;
+    border-radius: 10px;
+    text-align: left;
+    color: white;
+    background: $cp;
+
+    @media screen and (max-width: 1525px) {
+        position: relative;
+        width: 90%;
+        padding: 20px;
+        margin: 0 auto;
+        top: 10px;
+        left: 0;
+    }
+
+    &link {
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        margin: 10px 0;
+
+        @media screen and (max-width: 1525px) {
+            font-weight: normal;
+        }
+    }
+}
+
+.head__menu {
+    text-align: center;
+    grid-column: 1/7;
+    position: relative;
+    padding: 20px 0;
+
+    &search {
+        display: none;
+        margin: auto;
+        margin-top: 30px;
+        border: solid $csG .1px;
+        border-radius: 21px;
+        padding: 7px 20px;
+        width: 95%;
+        max-width: 400px;
+
+        &back {
+            background: white;
+            padding: 10px;
+            margin-bottom: -20px;
+        }
+    }
+
+    &icon {
+        display: none;
+        font-size: 20px;
+    }
+
+    &option {
+        color: black;
+        margin-left: 40px;
+        margin-right: 0;
+        font-size: 15px;
+        font-weight: bold;
+        align-self: center;
+
+        &:hover {
+            color: $cp;
+        }
+
+        &--M0 {
+            margin-left: 0;
+        }
+    }
+
+    &rela {
+        position: relative;
+        display: inline;
+        cursor: pointer;
+
+        &text {
+            margin: 0;
+            font-weight: bold;
+            position: relative;
+            display: inline;
+            font-size: 15px;
+
+            &:hover {
+                color: $cp;
+            }
+        }    
+    }
+
+    &market {
+        padding: 12px 35px 12px 45px;
+        color: #FF6D3D;
+        background: #F5F5F5;
+        border-radius: 22px;
+        max-width: 190px;
+        position: relative;
+
+        @media screen and (max-width: 1525px) {
+            background: none;
+            padding: 0;
+        }
+
+        &arrow {
+            position: absolute;
+            top: 50%;
+            -webkit-transform: rotate(90deg) translateY(-50%);
+            transform: rotate(90deg) translateX(-50%);
+            font-size: 18px;
+        }
+
+        &img {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+
+            @media screen and (max-width: 1525px) {
+                display: none;
+            }
+        }
+    }
+
+    &color {
+        color: $cp;
+    }
+}
+
+.head__btn {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: $cp;
+    border-radius: 20px;
+    padding: 12px 25px;
+    color: $csW;
+    font-weight: bold;
+    font-size: 15px;
+}

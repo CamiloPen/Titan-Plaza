@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('../partials/head') %>
+<body id="body">
+
+    <%- include('../layout/header') %>
+
+    <div class="cinema">
+        <div class="We__image">
+            <div class="service__color">
+                <p class="cinema__title">SERVICIOS</p>
+            </div>
+        </div>
+        <div class="service__back">
+            <div class="cinema__margin">
+                <div class="home__grid">
+                    <div class="home__serviceback home__serviceparking">
+                        <div class="home__servicemax">
+                            <p class="home__servicetitle home__flex--colorWhite">PARQUEADERO</p>
+                            <p class="home__flex--colorWhite">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a href="" class="home__servicelink">Ver tarifas</a>
+                        </div>
+                    </div>
+    
+                    <div class="home__serviceback home__servicepark">
+                        <div class="home__servicemax">
+                            <p class="home__servicetitle home__flex--colorWhite">PARQUE DE <br> DIVERSIONES</p>
+                            <a href="" class="home__servicelink">Conoce Más</a>
+                        </div>
+                    </div>
+    
+                    <div class="home__serviceback home__servicearea">
+                        <div class="home__servicemax">
+                            <p class="home__servicetitle home__flex--colorWhite">SOLICITUD DE <br> AREAS COMUNES</p>
+                            <a href="" class="home__servicelink">Solicitar Aquí</a>
+                        </div>
+                    </div>
+    
+                    <div class="home__serviceback home__servicepool">
+                        <div class="home__servicemax">
+                            <p class="home__servicetitle home__flex--colorWhite">PISCINA</p>
+                            <a href="" class="home__servicelink">Conoce Más</a>
+                        </div>
+                    </div>
+    
+                    <div class="home__serviceback home__servicepet">
+                        <div class="home__servicemax">
+                            <p class="home__servicetitle home__flex--colorWhite">PET FRIENDLY</p>
+                            <p class="home__flex--colorWhite">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a href="" class="home__servicelink">Nuestro Reglamento</a>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br><br><br>
+                <div class="cinema__content">
+                    <h2 class="home__flextitle home__flex--colorOrange">OTROS SERVICIOS</h2><br>
+                    <div class="cinema__grid">
+                        <%- include('../components/servicio') %>
+                        <%- include('../components/servicio') %> 
+                        <%- include('../components/servicio') %> 
+                        <%- include('../components/servicio') %>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+
+    <%- include('../layout/footer') %> 
+
+    <%- include('../partials/scripts') %>
+    
+</body>
+</html>
+
