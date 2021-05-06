@@ -24,6 +24,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-home:before {
+  content: "\e904";
+  color: #903392;
+}
+
 .icon-instagram:before {
   content: "\e903";
 }

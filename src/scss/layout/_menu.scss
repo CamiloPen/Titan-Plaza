@@ -30,6 +30,10 @@
         max-width: 1100px;
         align-items: center;
         justify-content: space-between;
+
+        @media screen and (max-width: 1210px) {
+            display: none;
+        }
     }
 
     &__time {
@@ -103,15 +107,19 @@
     text-align: left;
     color: white;
     background: $cp;
+    z-index: 2;
 
     @media screen and (max-width: 1525px) {
-        position: relative;
-        width: 90%;
-        padding: 20px;
-        margin: 0 auto;
-        top: 10px;
+        top: 20px;
         left: 0;
     }
+
+    // @media screen and (max-width: 800px) {
+    //     position: relative;
+    //     width: 90%;
+    //     padding: 20px;
+    //     margin: 0 auto;
+    // }
 
     &link {
         color: white;
@@ -129,6 +137,7 @@
     text-align: center;
     grid-column: 1/7;
     position: relative;
+    z-index: 1;
     padding: 20px 0;
 
     &search {
@@ -196,11 +205,6 @@
         max-width: 190px;
         position: relative;
 
-        @media screen and (max-width: 1525px) {
-            background: none;
-            padding: 0;
-        }
-
         &arrow {
             position: absolute;
             top: 50%;
@@ -214,15 +218,15 @@
             left: 15px;
             top: 50%;
             transform: translateY(-50%);
-
-            @media screen and (max-width: 1525px) {
-                display: none;
-            }
         }
     }
 
     &color {
         color: $cp;
+    }
+
+    &man, &time, &social {
+        display: none;
     }
 }
 
