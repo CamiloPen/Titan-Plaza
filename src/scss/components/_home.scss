@@ -36,9 +36,12 @@
     &__pad {
         padding: 0 10px;
         margin: 0 auto;
-
+    
         &:hover {
-            margin: -1.5px;
+            margin: -1px;
+            transform: scale(1.005);
+            transition: ease all;
+            transition-duration: .3s;
         }
     }
 

@@ -6,7 +6,7 @@
 
         &__movil {
             height: auto;
-            border-radius: 10px;
+            border-radius:0 0 10px 10px;
         }
     }
 
@@ -17,13 +17,10 @@
     .head__menu {
         display: none;
         background: white;
-        overflow: auto;
-        height: auto;
         padding-bottom: 60px;
-        border-radius: 10px;
         width: 100%;
         grid-template-rows: repeat(3, 1fr);
-        grid-template-columns:0 repeat(4, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-auto-flow: column;
         row-gap: 15px;
         align-items: center;
@@ -35,10 +32,6 @@
 
         &option {
             margin: 0;
-
-            &--M0 {
-                grid-row: 1/2;
-            }
         }
     }
 
@@ -65,13 +58,18 @@
         text-align: center;
         padding: 10px;
         grid-column: 3/4;
+        color: $cp;
+
+        &:hover {
+            color: #b14cb3;
+        }
     }
 }
 
 @media screen and (max-width: 800px) {
     .head__menu {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(13, 1fr);
+        grid-template-rows: repeat(11, 1fr) auto auto; 
         padding: 0 20px;
         max-width: 500px;
     }

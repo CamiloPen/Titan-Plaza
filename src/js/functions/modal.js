@@ -3,9 +3,11 @@ var body   = document.getElementById("body"),
     add    = document.getElementById("Picture"),
     modal1 = document.getElementById("Pic"),
     btn    = document.getElementById("myBtn"),
+    timenu = document.getElementById("time-menu"),
     check  = document.getElementById("check"),
     mod    = document.getElementById("modPoints"),
     x      = document.getElementById("menu"),
+    icon   = document.getElementById("menu-icon"),
     acept  = document.getElementById("acept"),
     dot    = document.getElementById("dot"),
     head   = document.getElementById("head"),
@@ -84,11 +86,21 @@ function myFunction() {
 
   if (x.className === "head__menu") {
     x.className += " head__menushow";
+    icon.className = "icon-cross";
     body.style.overflow = "hidden";
     head.className += " head__movil";
   } else {
     x.className = "head__menu"
     body.style.overflow = "auto";
     head.className = "head";
+    icon.className = "icon-menu";
+  }
+}
+
+function time() {
+  if (timenu.style.display === "block") {
+    timenu.style.display = "none";
+  } else {
+    timenu.style.display = "block";
   }
 }

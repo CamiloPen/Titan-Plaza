@@ -24,6 +24,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-cross:before {
+  content: "\ea0f";
+}
+
 .icon-home:before {
   content: "\e904";
   color: #903392;
