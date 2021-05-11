@@ -4,9 +4,10 @@
     overflow: hidden;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.02);
     margin: 5px;
+    transition: ease all .3s;
 
     &:hover {
-        margin: -1.5px;
+        transform: scale(1.01);
     }
 
     &__img {
@@ -71,9 +72,15 @@
         text-align: center;
         border-radius: 22px;
         font-weight: bold;
+        transition: ease all .3s;
+
+        &:hover {
+            background: rgb(226, 226, 226);
+        }
 
         &green {
             background: #B2BD00;
+            transition: ease all .3s;
 
             &:hover {
                 background: #c0c55d;
@@ -82,6 +89,11 @@
 
         &back {
             background: #00B3A2;
+            transition: ease all .3s;
+
+            &:hover {
+                background: #1fc2b2;
+            }
         }
     }
 
@@ -102,6 +114,7 @@
 
         &back { 
             background: #00B3A2;
+            transition: ease all .3s;
 
             &:hover {
                 background: #5fd1c6;

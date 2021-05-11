@@ -12,11 +12,11 @@
             </div>
         </div>
         <div class="prom">
-            <div class="home__pad">
+            <div>
                 <div class="cinema__grid">
                     <div class="prom__flex">
-                        <div class="prom__flexback" onclick="shop()" id="one">
-                            <p>Filtrar Tiendas<span class="icon-ctrl prom__flexarrow"></span></p>
+                        <div class="prom__flexback">
+                            <p id="one">Filtrar Tiendas<span class="icon-ctrl prom__flexarrow"></span></p>
                             <form class="prom__flexmenu" id="tienda">
                                 <input type="checkbox" id="tie1">
                                 <label for="tie1" class="prom__flexcheck">Tienda 1</label><br><br>
@@ -30,8 +30,8 @@
                                 <label for="tie5" class="prom__flexcheck">Tienda 5</label><br><br>
                             </form>
                         </div>
-                        <div class="prom__flexback" onclick="grade()" id="two">
-                            <p>Filtrar Categoría<span class="icon-ctrl prom__flexarrow"></span></p>
+                        <div class="prom__flexback">
+                            <p id="two">Filtrar Categoría<span class="icon-ctrl prom__flexarrow"></span></p>
                             <form class="prom__flexmenu" id="cate">
                                 <input type="checkbox" id="cate1">
                                 <label for="cate1" class="prom__flexcheck">Categoría</label><br><br>
@@ -45,8 +45,8 @@
                                 <label for="cate5" class="prom__flexcheck">Categoría</label><br><br>
                             </form>
                         </div>
-                        <div class="prom__flexback" onclick="order()" id="three">
-                            <p>Más Recientes<span class="icon-ctrl prom__flexarrow"></span></p>
+                        <div class="prom__flexback">
+                            <p id="three">Más Recientes<span class="icon-ctrl prom__flexarrow"></span></p>
                             <form class="prom__flexmenu" id="order">
                                 <input type="checkbox" id="order1">
                                 <label for="order1" class="prom__flexcheck">Orden 1</label><br><br>
@@ -63,7 +63,7 @@
                     </div>
                     <div class="prom__menu">
                         <div class="prom__flexback">
-                            <p onclick="fil()">Filtros<span class="icon-ctrl prom__flexarrow"></span></p>
+                            <p id="fil">Filtros<span class="icon-ctrl prom__flexarrow"></span></p>
                             <div class="modmenu" id="modmenu1">
                                 <p class="modmenu__title">Filtros</p>
                                 <button class="accordion">Categoría <span class="icon-ctrl accordion__arrow"></span></button>
@@ -98,11 +98,11 @@
                                 <div class="modmenu__foot">
                                     <p class="modmenu__foottext">Limpiar Filtro</p>
                                 </div>
-                                <span onclick="Closeprom1()" class="prom__close">×</span>
+                                <span id="Closeprom1" class="prom__close">×</span>
                             </div>
                         </div>
                         <div class="prom__flexback">
-                            <p onclick="ordena()">Ordenar<span class="icon-ctrl prom__flexarrow"></span></p>
+                            <p id="ordena">Ordenar<span class="icon-ctrl prom__flexarrow"></span></p>
                             <div class="modmenu" id="modmenu2">
                                 <p class="modmenu__title">Ordenar</p>
                                 <form class="panel__see" id="order">
@@ -117,7 +117,7 @@
                                     <input type="checkbox" id="order5">
                                     <label for="order5" class="prom__flexcheck">Orden 5</label><br><br>
                                 </form>
-                                <span onclick="Closeprom2()" class="prom__close">×</span>
+                                <span id="Closeprom2" class="prom__close">×</span>
                             </div>
                         </div>
                     </div>

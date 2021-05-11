@@ -7,7 +7,7 @@
     }
 
     &__margin {
-        margin: 0 15px;
+        margin: 0 20px;
     }
 
     &__color {
@@ -101,7 +101,12 @@
                 max-width: 190px;
                 color: white;
                 border-radius: 22px;
+                transition: ease all .3s;
                 padding: 13px;
+
+                &:hover {
+                    background: #f54879
+                }
             }
         }
     }
@@ -170,6 +175,7 @@
             text-align: center;
             position: relative;
             color: white;
+            transition: ease all .3s;
             width: 100%;
             max-width: 230px;
 

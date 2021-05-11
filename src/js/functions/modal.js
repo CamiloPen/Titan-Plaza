@@ -3,26 +3,14 @@ var body   = document.getElementById("body"),
     add    = document.getElementById("Picture"),
     modal1 = document.getElementById("Pic"),
     btn    = document.getElementById("myBtn"),
-    timenu = document.getElementById("time-menu"),
     check  = document.getElementById("check"),
     mod    = document.getElementById("modPoints"),
     x      = document.getElementById("menu"),
-    icon   = document.getElementById("menu-icon"),
     acept  = document.getElementById("acept"),
     dot    = document.getElementById("dot"),
     head   = document.getElementById("head"),
     grid   = document.getElementById("grid"),
-    str    = document.getElementById("store"),
-    sho    = document.getElementById("tienda"),
-    cate   = document.getElementById("cate"),
-    or     = document.getElementById("order"),
-    one    = document.getElementById("one"),
-    two    = document.getElementById("two"),
-    three  = document.getElementById("three"),
-    mapa   = document.getElementById("menu-map"),
-    ser    = document.getElementById("service"),
-    modme1 = document.getElementById("modmenu1"),
-    modme2 = document.getElementById("modmenu2"),
+    timenu2= document.getElementById("time-menu2"),
     sale   = document.getElementById("sale");
 
 btn.onclick = function() {
@@ -82,25 +70,73 @@ function opensale(s) {
     }  
 }
 
-function myFunction() {
+$(document).ready(function(){
+  $("#menu-icon").click(function(){
+    if (body.style.overflow === "hidden") {
+      body.style.overflow = "auto";
+      x.className= "head__menu";
+    } else {
+      body.style.overflow = "hidden";
+      x.style.top = "10px";
+    }
+    $("#menu").slideToggle();
+  });
 
-  if (x.className === "head__menu") {
-    x.className += " head__menushow";
-    icon.className = "icon-cross";
+  $("#time").click(function(){
+      $("#time-menu").slideToggle();
+  });
+
+  $("#time2").click(function(){
+    timenu2.style.position = "relative";
+    timenu2.style.top = "0";
+    $("#time-menu2").slideToggle();
+  });
+
+  $("#store").click(function(){
+    $("#str").slideToggle();
+  });
+
+  $("#service").click(function(){
+    $("#ser").slideToggle();
+  });
+
+  $("#filtros").click(function(){
+    $("#filtro").slideToggle();
+  });
+
+  $("#one").click(function(){
+    $("#tienda").slideToggle();
+  });
+
+  $("#two").click(function(){
+    $("#cate").slideToggle();
+  });
+
+  $("#three").click(function(){
+    $("#order").slideToggle();
+  });
+
+  $("#fil").click(function(){
+    $("#modmenu1").slideToggle();
     body.style.overflow = "hidden";
-    head.className += " head__movil";
-  } else {
-    x.className = "head__menu"
-    body.style.overflow = "auto";
-    head.className = "head";
-    icon.className = "icon-menu";
-  }
-}
+  });
 
-function time() {
-  if (timenu.style.display === "block") {
-    timenu.style.display = "none";
-  } else {
-    timenu.style.display = "block";
-  }
-}
+  $("#Closeprom1").click(function(){
+    $("#modmenu1").slideToggle();
+    body.style.overflow = "auto";
+  });
+
+  $("#ordena").click(function(){
+    $("#modmenu2").slideToggle();
+    body.style.overflow = "hidden";
+  });
+
+  $("#Closeprom2").click(function(){
+    $("#modmenu2").slideToggle();
+    body.style.overflow = "auto";
+  });
+
+  $("#mapa").click(function(){
+    $("#menu-map").slideToggle();
+  });
+});

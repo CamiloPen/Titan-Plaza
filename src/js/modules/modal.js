@@ -1,15 +1,5 @@
 document.getElementById("Open").click();
 
-function filtros() {
-  var x = document.getElementById("filtro");
-
-  if (x.className === "store__filtros") {
-    x.className += " show_menu"
-  } else {
-    x.className = "store__filtros";
-  }
-}
-
 checkboxCustomized('.store__check');
 
 function checkboxCustomized(selector) {

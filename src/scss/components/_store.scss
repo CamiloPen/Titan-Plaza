@@ -1,10 +1,11 @@
 .store {
     margin-top: 117px;
-    padding-bottom: 80px;
+    padding: 0 20px 80px;
     text-align: center;
     background-image: url("../img/fondo.png");
     background-repeat: no-repeat;
     background-color: #FAFAFA;
+    background-position: top;
 
     @media screen and (max-width: 1525px) {
         margin-top: 77px;
@@ -38,11 +39,11 @@
 
     &__check {
         line-height: 30px;
-    }
     
-    &__check:hover {
-        color: $cp;
-        border: solid 1px $csW;
+        &:hover {
+            color: $cp;
+            border: solid 1px $csW;
+        }
     }
     
     &__check.checked::before {
@@ -57,6 +58,8 @@
     
     &__text {
         &Back {
+            transition: ease all .3s;
+
             &:hover {
                 background: $cp;
                 margin-top: -7px;
@@ -220,6 +223,7 @@
     background: none;
     top: 66%;
     right: 6px;
+    transition: ease all .3s;
 
     &:hover, &:active, &favo {
         color: red;

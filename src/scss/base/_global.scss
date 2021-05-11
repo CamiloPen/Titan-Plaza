@@ -105,3 +105,13 @@ h5,p {
 input[type=checkbox] {
     display: none;
 }
+
+.More {
+    display: none;
+}
+
+.quit {
+    @media screen and (max-width: 1025px) {
+        display: none;
+    }
+}

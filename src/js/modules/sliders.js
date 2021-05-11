@@ -32,15 +32,18 @@ const firstshow = (slides) => {
       {
         breakpoint: 700,
         settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '60px',
           slidesToShow: 2,
-          slidesToScroll: 2,
         }
       },
       {
-        breakpoint: 552,
+        breakpoint: 600,
         settings: {
+          centerMode: true,
+          centerPadding: '110px',
           slidesToShow: 1,
-          slidesToScroll: 1,
         }
       },
     ]

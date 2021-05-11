@@ -15,7 +15,7 @@
     &__color {
         background: rgb(204,41,130);
         background: linear-gradient(180deg, rgba(204,41,130,0.90) 10%, rgba(144,51,146,1) 100%);
-        padding: 0 15px;
+        padding: 0 20px;
     }
 
     &__flex {
@@ -74,11 +74,11 @@
         background-color: white;
         background-repeat: no-repeat;
         margin-top: 50px;
-        padding: 0 15px 130px;
+        padding: 0 20px 130px;
         margin-bottom: 80px;
 
         @media screen and (max-width: 1054px) {
-            padding: 0 15px 10px;
+            padding-bottom: 10px;
         }
 
         &img {

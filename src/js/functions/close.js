@@ -26,13 +26,3 @@ function Close5() {
 function Close6() {
   dot.style.display = "none";
 }
-
-function Closeprom1() {
-  modme1.style.display = "none";
-  body.style.overflow = "auto";
-}
-
-function Closeprom2() {
-  modme2.style.display = "none";
-  body.style.overflow = "auto";
-}

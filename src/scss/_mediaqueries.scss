@@ -19,16 +19,21 @@
         background: white;
         padding-bottom: 60px;
         width: 100%;
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-columns: repeat(4, 1fr);
-        grid-auto-flow: column;
-        row-gap: 15px;
-        align-items: center;
-        justify-items: left;
-        max-width: 1000px;
-        margin: 37px auto 0;
-        padding-left: 10px;
-    
+
+        &grid{
+            display: grid;
+            width: 100%;
+            max-width: 1000px;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-flow: column;
+            row-gap: 15px;
+            align-items: center;
+            justify-items: left;
+            margin: 0 auto;
+            padding-left: 10px;
+            position: relative;
+        }
 
         &option {
             margin: 0;
@@ -36,8 +41,8 @@
     }
 
     .head__logo {
-        position: absolute;
-        top: 10px;
+        position: relative;
+        width: 140px;
     }
 
     .head__menushow {
@@ -59,6 +64,7 @@
         padding: 10px;
         grid-column: 3/4;
         color: $cp;
+        transition: ease all .3s;
 
         &:hover {
             color: #b14cb3;
@@ -67,16 +73,17 @@
 }
 
 @media screen and (max-width: 800px) {
-    .head__menu {
+    .head__menugrid {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(11, 1fr) auto auto; 
         padding: 0 20px;
+        height: 100%;
         max-width: 500px;
     }
 
-    .head__menugrid {
-        display: block;
-        align-items: flex-start;
+    .head__logo {
+        width: 110px;
+        margin: 6px 15px;
     }
 
     .head__menuman {
@@ -95,7 +102,6 @@
         justify-self: center;
         border-top: solid 1px #F4EBF4;
         padding-top: 40px;
-        grid-row: 12/14;
         width: 100%;
         padding-bottom: 20px;
     }
@@ -125,7 +131,7 @@
     .store__filtros {
         display: none;
         width: 90%;
-        justify-self: Add;
+        justify-self: center;
         max-width: 300px;
     }
 
@@ -135,16 +141,11 @@
 
     .store__menufiltro {
         display: flex;
-        align-content: Add;
         justify-content: space-between;
     }
 
-    .store__Add {
-        display: grid;
-    }
-
     .store__search {
-        text-align: Add;
+        text-align: center;
         padding: 0;
     }
 
