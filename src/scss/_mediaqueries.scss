@@ -195,8 +195,8 @@
 
 #menu-icon span {
   display: block;
-  width: 33px;
-  height: 4px;
+  width: 20px;
+  height: 2px;
   margin: 4px auto;
   position: relative;
   background: #333333;
@@ -218,7 +218,7 @@
 
 #menu-icon input:checked ~ span {
   opacity: 1;
-  transform: rotate(45deg) translate(-9px, -14px);
+  transform: rotate(45deg) translate(-6px, -8px);
   background: #232323;
 }
 

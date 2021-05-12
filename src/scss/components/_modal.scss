@@ -78,6 +78,8 @@
     background: $csW;
     margin: 10px auto;
     height: fit-content;
+    max-height: 628px;
+    overflow: auto;
     display: grid;
     grid-template-columns: 0.9fr 1.1fr;
     border-radius: 10px;

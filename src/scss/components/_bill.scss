@@ -333,8 +333,13 @@
         font-size: 17px;
         padding: 13px;
         border-radius: 20px;
+        transition: ease all .3s;
         width: 240px;
         font-weight: bold;
+
+        &:hover {
+            background: rgb(221, 221, 221);
+        }
 
         &LI {
             background: rgba(255, 255, 255, 0.2);

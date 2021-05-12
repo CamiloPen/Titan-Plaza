@@ -25,6 +25,7 @@ const firstshow = (slides) => {
       {
         breakpoint: 950,
         settings: {
+          arrows: false,
           slidesToShow: 3,
           slidesToScroll: 2,
         }
@@ -32,17 +33,25 @@ const firstshow = (slides) => {
       {
         breakpoint: 700,
         settings: {
-          arrows: false,
           centerMode: true,
           centerPadding: '60px',
           slidesToShow: 2,
+          
         }
       },
       {
         breakpoint: 600,
         settings: {
           centerMode: true,
-          centerPadding: '110px',
+          centerPadding: '80px',
+          slidesToShow: 1,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          centerMode: true,
+          centerPadding: '40px',
           slidesToShow: 1,
         }
       },

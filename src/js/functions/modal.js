@@ -78,7 +78,7 @@ $(document).ready(function(){
       x.className= "head__menu";
       setTimeout(function(){ 
         head.style.height = "77px";
-        head.style.overflow = "hidden";
+        head.style.overflow = "unset";
       }, 400);
     } else {
       body.style.overflow = "hidden";

@@ -69,9 +69,14 @@
             padding: 9px;
             margin-right: 0;
             max-width: 300px;
+            transition: ease all .3s;
             text-align: center;
             border-radius: 17px;
             font-weight: bold;
+
+            &:hover {
+                background: rgb(221, 221, 221);
+            }
 
             @media screen and (max-width: 500px) {
                 max-width: 250px;

@@ -95,6 +95,11 @@
         color: $csW;
         font-weight: bold;
         grid-column: 1/-1;
+        transition: ease all .3s;
+
+        &:hover {
+            background: #8f4791;
+        }
     }
 
     &foot {
