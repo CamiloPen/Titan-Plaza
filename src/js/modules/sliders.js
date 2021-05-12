@@ -42,6 +42,7 @@ const firstshow = (slides) => {
       {
         breakpoint: 600,
         settings: {
+          arrows: false,
           centerMode: true,
           centerPadding: '80px',
           slidesToShow: 1,
@@ -50,6 +51,7 @@ const firstshow = (slides) => {
       {
         breakpoint: 480,
         settings: {
+          arrows: false,
           centerMode: true,
           centerPadding: '40px',
           slidesToShow: 1,
