@@ -1,5 +1,5 @@
 var extra = document.querySelectorAll(".More"),
-    mbtn = document.getElementById("more");
+    mbtn  = document.getElementById("more");
 
 function more1() {
     extra.forEach(plus => {

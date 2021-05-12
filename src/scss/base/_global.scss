@@ -10,6 +10,7 @@
 * {
     font-family: "Open Sans";
     font-weight: normal;
+    // transition: ease all .3s;
 }
 
 body {
@@ -112,6 +113,12 @@ input[type=checkbox] {
 
 .quit {
     @media screen and (max-width: 1025px) {
+        display: none;
+    }
+}
+
+.hide {
+    @media screen and (max-width: 940px) {
         display: none;
     }
 }

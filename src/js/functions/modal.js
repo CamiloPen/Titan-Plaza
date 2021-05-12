@@ -72,14 +72,22 @@ function opensale(s) {
 
 $(document).ready(function(){
   $("#menu-icon").click(function(){
+      $("#menu").slideToggle();
     if (body.style.overflow === "hidden") {
       body.style.overflow = "auto";
       x.className= "head__menu";
+      setTimeout(function(){ 
+        head.style.height = "77px";
+        head.style.overflow = "hidden";
+      }, 400);
     } else {
       body.style.overflow = "hidden";
-      x.style.top = "10px";
+      x.style.top = "10px"; 
+      head.style.overflowX = "hidden";
+      head.style.overflowY = "auto";
+      head.style.height = "100%";
     }
-    $("#menu").slideToggle();
+    
   });
 
   $("#time").click(function(){

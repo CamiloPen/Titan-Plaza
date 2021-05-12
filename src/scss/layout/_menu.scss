@@ -159,7 +159,12 @@
         color: white;
         font-size: 15px;
         font-weight: bold;
+        transition: ease all .3s;
         margin: 10px 0;
+
+        &:hover {
+            color: rgb(202, 201, 201);
+        }
 
         @media screen and (max-width: 1525px) {
             font-weight: normal;

@@ -16,8 +16,9 @@
     
     .head__menu {
         display: none;
+        text-align: left;
         background: white;
-        padding-bottom: 60px;
+        padding-bottom: 40px;
         width: 100%;
 
         &grid{
@@ -73,12 +74,29 @@
 }
 
 @media screen and (max-width: 800px) {
+
     .head__menugrid {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(11, 1fr) auto auto; 
+        grid-template-rows: repeat(3,1fr) auto 1fr auto repeat(4,1fr) repeat(3, auto);
         padding: 0 20px;
         height: 100%;
         max-width: 500px;
+    }
+
+    .head__submenu {
+        position: relative;
+        background: none;
+        padding: 0 15px 15px;
+
+        &link {
+            color: black;
+            font-weight: bold;
+
+            &:hover {
+                color: $cp;
+            }
+    
+        }
     }
 
     .head__logo {
@@ -99,7 +117,7 @@
     }
 
     .head__menusocial {
-        justify-self: center;
+        text-align: center;
         border-top: solid 1px #F4EBF4;
         padding-top: 40px;
         width: 100%;
@@ -152,4 +170,63 @@
     .store__grid {
         grid-template-columns: 1fr;
     }
+}
+
+#menu-icon {
+  position: relative;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menu-icon input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+#menu-icon span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin: 4px auto;
+  position: relative;
+  background: #333333;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menu-icon span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menu-icon span:nth-last-child(2) {
+  transform-origin: 50% 100%;
+}
+
+#menu-icon input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-9px, -14px);
+  background: #232323;
+}
+
+#menu-icon input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menu-icon input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
 }

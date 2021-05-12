@@ -143,8 +143,17 @@
             padding: 10px;
             font-weight: bold;
             width: 100%;
+            transition: ease all .3s;
             max-width: 315px;
             border-radius: 22px;
+
+            &:hover {
+                background: #8f4791;
+            }
+
+            @media screen and (max-width: 576px) {
+                max-width: 100%;
+            }
         }
     }
 
@@ -159,6 +168,10 @@
         column-gap: 20px;
         line-height: 25px;
         margin: 0 auto 20px;
+
+        @media screen and (max-width: 576px) {
+            grid-template-columns: 1fr;
+        }
 
         &row{
             @media screen and (max-width: 830px) {

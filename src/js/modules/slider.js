@@ -52,6 +52,14 @@ $(document).ready(function(){
             slidesToShow: 1,
           }
         },
+        {
+          breakpoint: 660,
+          settings: {
+            centerMode: true,
+            centerPadding: '100px',
+            slidesToShow: 1,
+          }
+        },
     ]
   });
 });
